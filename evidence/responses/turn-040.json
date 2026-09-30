@@ -1,0 +1,47 @@
+{
+  "id": "chatcmpl-9c988d3e6a3b4788a4781e08",
+  "object": "chat.completion",
+  "created": 1790806337,
+  "model": "qwen3.8-flash-next-iq2_xs",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": null,
+        "tool_calls": [
+          {
+            "id": "call_46f7db29e1134d489e6d6885",
+            "type": "function",
+            "function": {
+              "name": "replace_text",
+              "arguments": "{\"path\":\"game.js\",\"old\":\"  // chassis aligns with the slope through suspension torque (strong enough to be visible)\\n  var align = 0;\\n  if (contactSum > 0) align = 9;\\n  car.omega += (totalTorque / car.inertia) * dt + align * dt;\",\"new\":\"  // gentle extra alignment torque so the chassis follows the slope\\n  if (contactSum > 0) car.omega += (totalTorque / car.inertia) * dt + 2.5 * dt;\\n  else car.omega += (totalTorque / car.inertia) * dt;\"}"
+            }
+          }
+        ]
+      },
+      "finish_reason": "tool_calls"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 53746,
+    "completion_tokens": 175,
+    "total_tokens": 53921,
+    "prompt_tokens_details": {
+      "cached_tokens": 53725
+    }
+  },
+  "timings": {
+    "cache_n": 53725,
+    "prompt_n": 21,
+    "prompt_ms": 133.8,
+    "prompt_per_token_ms": 6.371,
+    "prompt_per_second": 157.0,
+    "predicted_n": 175,
+    "predicted_ms": 1026.2,
+    "predicted_per_token_ms": 5.864,
+    "predicted_per_second": 170.5,
+    "draft_n": 159,
+    "draft_n_accepted": 132
+  }
+}

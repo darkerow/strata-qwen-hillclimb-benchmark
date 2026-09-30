@@ -1,0 +1,47 @@
+{
+  "id": "chatcmpl-8b3614a214e04d13956190be",
+  "object": "chat.completion",
+  "created": 1790806529,
+  "model": "qwen3.8-flash-next-iq2_xs",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": null,
+        "tool_calls": [
+          {
+            "id": "call_4564961c32504eacb42a5ccb",
+            "type": "function",
+            "function": {
+              "name": "replace_text",
+              "arguments": "{\"new\":\"function drawFuel() {\\n  for (var i = 0; i < fuels.length; i++) {\\n    var f = fuels[i];\\n    if (f.taken) continue;\\n    var p = worldToScreen(f.x, f.y);\\n    if (p.x < -40 || p.x > W + 40) continue;\\n    ctx.fillStyle = '#2f3a45';\\n    ctx.fillRect(p.x - 9, p.y - 12, 18, 24);\\n    ctx.fillStyle = '#e0553f';\\n    ctx.fillRect(p.x - 9, p.y - 4, 18, 16);\\n    ctx.fillStyle = '#8fd6a0';\\n    ctx.fillRect(p.x - 3, p.y - 16, 6, 4);\\n    ctx.fillStyle = 'rgba(255,255,255,.25)';\\n    ctx.fillRect(p.x - 6, p.y - 2, 3, 10);\\n  }\\n}\\n\\nfunction drawParticles() {\",\"old\":\"function drawParticles() {\",\"path\":\"game.js\"}"
+            }
+          }
+        ]
+      },
+      "finish_reason": "tool_calls"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 27871,
+    "completion_tokens": 298,
+    "total_tokens": 28169,
+    "prompt_tokens_details": {
+      "cached_tokens": 27850
+    }
+  },
+  "timings": {
+    "cache_n": 27850,
+    "prompt_n": 21,
+    "prompt_ms": 153.2,
+    "prompt_per_token_ms": 7.295,
+    "prompt_per_second": 137.1,
+    "predicted_n": 298,
+    "predicted_ms": 1975.2,
+    "predicted_per_token_ms": 6.628,
+    "predicted_per_second": 150.9,
+    "draft_n": 274,
+    "draft_n_accepted": 215
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "id": "chatcmpl-5c3a2e20397e428793ad7083",
+  "object": "chat.completion",
+  "created": 1790805966,
+  "model": "qwen3.8-flash-next-iq2_xs",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": null,
+        "tool_calls": [
+          {
+            "id": "call_b828b90083914cdbbb04ac78",
+            "type": "function",
+            "function": {
+              "name": "replace_text",
+              "arguments": "{\"path\":\"game.js\",\"old\":\"  // overturned check\\n  var upness = -upy; // cos(angle) basically; angle near PI means roof down\\n  var cosA = Math.cos(car.angle);\",\"new\":\"  car.prevContact = contactSum;\\n\\n  // overturned check\\n  var cosA = Math.cos(car.angle);\"}"
+            }
+          }
+        ]
+      },
+      "finish_reason": "tool_calls"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 13507,
+    "completion_tokens": 108,
+    "total_tokens": 13615,
+    "prompt_tokens_details": {
+      "cached_tokens": 13484
+    }
+  },
+  "timings": {
+    "cache_n": 13484,
+    "prompt_n": 23,
+    "prompt_ms": 141.6,
+    "prompt_per_token_ms": 6.157,
+    "prompt_per_second": 162.4,
+    "predicted_n": 108,
+    "predicted_ms": 599.6,
+    "predicted_per_token_ms": 5.552,
+    "predicted_per_second": 180.1,
+    "draft_n": 92,
+    "draft_n_accepted": 79
+  }
+}

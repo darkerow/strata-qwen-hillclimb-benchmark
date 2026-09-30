@@ -1,0 +1,5 @@
+{
+  "browser": "Latest game renders, UI and Start work, no observed runtime exception.",
+  "simulation": "Final current build:120s held gas =>1429m,7coins banked,fuel0 gameover;fuel pickups and varying angles work,noNaN. Restart resets0m/100%fuel. Rough physics remains a stated limitation.",
+  "request": "This is turn80, the final allowed turn. Call finish now. Do not edit code again."
+}

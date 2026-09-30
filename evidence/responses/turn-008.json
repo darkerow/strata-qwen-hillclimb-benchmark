@@ -1,0 +1,55 @@
+{
+  "id": "chatcmpl-3a6b52c1efb94695858c96c9",
+  "object": "chat.completion",
+  "created": 1790805967,
+  "model": "qwen3.8-flash-next-iq2_xs",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": null,
+        "tool_calls": [
+          {
+            "id": "call_a09c065bfa504859a2c69eb8",
+            "type": "function",
+            "function": {
+              "name": "replace_text",
+              "arguments": "{\"path\":\"index.html\",\"old\":\"    <div id=\\\"card\\\">\\n      <h1 id=\\\"title\\\">Paused</h1>\",\"new\":\"    <div id=\\\"card\\\">\\n      <h1 id=\\\"title\\\">Ready to drive</h1>\"}"
+            }
+          },
+          {
+            "id": "call_de54587b0fef4559b12e6318",
+            "type": "function",
+            "function": {
+              "name": "replace_text",
+              "arguments": "{\"path\":\"game.js\",\"old\":\"resetCar(); spawnCoins();\\nrequestAnimationFrame(frame);\",\"new\":\"resetCar(); spawnCoins();\\nshowOverlay('Ready to drive', 'Gas: Right / D \\u2014 press pedals on touch screens. P pause, R restart, M sound, G garage.', 'Start driving');\\nstate = 'ready';\\nrequestAnimationFrame(frame);\"}"
+            }
+          }
+        ]
+      },
+      "finish_reason": "tool_calls"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 13638,
+    "completion_tokens": 205,
+    "total_tokens": 13843,
+    "prompt_tokens_details": {
+      "cached_tokens": 13614
+    }
+  },
+  "timings": {
+    "cache_n": 13614,
+    "prompt_n": 24,
+    "prompt_ms": 136.8,
+    "prompt_per_token_ms": 5.7,
+    "prompt_per_second": 175.4,
+    "predicted_n": 205,
+    "predicted_ms": 1266.1,
+    "predicted_per_token_ms": 6.176,
+    "predicted_per_second": 161.9,
+    "draft_n": 171,
+    "draft_n_accepted": 147
+  }
+}

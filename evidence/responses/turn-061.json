@@ -1,0 +1,47 @@
+{
+  "id": "chatcmpl-4fb8dadd4b834820858b63ca",
+  "object": "chat.completion",
+  "created": 1790806539,
+  "model": "qwen3.8-flash-next-iq2_xs",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": null,
+        "tool_calls": [
+          {
+            "id": "call_48e391ef80e542c19f18afe1",
+            "type": "function",
+            "function": {
+              "name": "replace_text",
+              "arguments": "{\"new\":\"  var target = wrapAngle(Math.atan(groundSlope(car.x)));\\n  var err = wrapAngle(target - car.angle);\\n  car.omega += (totalTorque / car.inertia) * dt + err * 1.5 * dt;\\n  car.omega -= car.omega * 2.6 * dt;\\n  car.omega = clamp(car.omega, -6, 6);\",\"old\":\"  var target = wrapAngle(Math.atan(groundSlope(car.x)));\\n  var err = wrapAngle(target - car.angle);\\n  car.omega += (totalTorque / car.inertia) * dt + 3.2 * err * dt + 2.2 * dt;\\n  car.omega -= car.omega * 2.2 * dt;\\n  car.omega = clamp(car.omega, -6, 6);\",\"path\":\"game.js\"}"
+            }
+          }
+        ]
+      },
+      "finish_reason": "tool_calls"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 29589,
+    "completion_tokens": 231,
+    "total_tokens": 29820,
+    "prompt_tokens_details": {
+      "cached_tokens": 29568
+    }
+  },
+  "timings": {
+    "cache_n": 29568,
+    "prompt_n": 21,
+    "prompt_ms": 180.5,
+    "prompt_per_token_ms": 8.595,
+    "prompt_per_second": 116.3,
+    "predicted_n": 231,
+    "predicted_ms": 1416.6,
+    "predicted_per_token_ms": 6.132,
+    "predicted_per_second": 163.1,
+    "draft_n": 216,
+    "draft_n_accepted": 169
+  }
+}

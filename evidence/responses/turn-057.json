@@ -1,0 +1,47 @@
+{
+  "id": "chatcmpl-718bf863f2754e529a5263d6",
+  "object": "chat.completion",
+  "created": 1790806526,
+  "model": "qwen3.8-flash-next-iq2_xs",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": null,
+        "tool_calls": [
+          {
+            "id": "call_5fba441eecfb407fbc6c0eed",
+            "type": "function",
+            "function": {
+              "name": "replace_text",
+              "arguments": "{\"new\":\"function drawDebug() {\\n  var speed = Math.sqrt(car.vx * car.vx + car.vy * car.vy);\\n  var d = 'dist ' + Math.max(0, Math.floor(car.x - 120)) + 'm | speed ' + speed.toFixed(1) +\\n          ' | fuel ' + Math.round(car.fuel) + '% | coins ' + runCoins + ' | state ' + state +\\n          ' | angle ' + (car.angle * 57.295).toFixed(1) + 'deg | omega ' + car.omega.toFixed(2) +\\n          ' | contact ' + car.contact;\\n  if (d !== lastDebug) { el.debug.textContent = d; lastDebug = d; }\\n}\",\"old\":\"function drawDebug() {\\n  var speed = Math.sqrt(car.vx * car.vx + car.vy * car.vy);\\n  var d = 'dist ' + Math.max(0, Math.floor(car.x - 120)) + 'm | speed ' + speed.toFixed(1) +\\n          ' | fuel ' + Math.round(car.fuel) + '% | coins ' + runCoins + ' | state ' + state +\\n          ' | angle ' + (car.angle * 57.295).toFixed(1) + 'deg';\\n  if (d !== lastDebug) { el.debug.textContent = d; lastDebug = d; }\\n}\",\"path\":\"game.js\"}"
+            }
+          }
+        ]
+      },
+      "finish_reason": "tool_calls"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 27493,
+    "completion_tokens": 355,
+    "total_tokens": 27848,
+    "prompt_tokens_details": {
+      "cached_tokens": 27472
+    }
+  },
+  "timings": {
+    "cache_n": 27472,
+    "prompt_n": 21,
+    "prompt_ms": 164.7,
+    "prompt_per_token_ms": 7.843,
+    "prompt_per_second": 127.5,
+    "predicted_n": 355,
+    "predicted_ms": 2011.0,
+    "predicted_per_token_ms": 5.665,
+    "predicted_per_second": 176.5,
+    "draft_n": 314,
+    "draft_n_accepted": 281
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "id": "chatcmpl-64ab357ca8d4427b83988b6f",
+  "object": "chat.completion",
+  "created": 1790806541,
+  "model": "qwen3.8-flash-next-iq2_xs",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": null,
+        "tool_calls": [
+          {
+            "id": "call_908088c4080d463c819810b9",
+            "type": "function",
+            "function": {
+              "name": "replace_text",
+              "arguments": "{\"new\":\"  if (contactSum > 0) {\\n    // torque that makes the chassis follow the terrain slope\\n    var target = wrapAngle(Math.atan(groundSlope(car.x)));\\n    var err = wrapAngle(target - car.angle);\\n    car.omega += (totalTorque / car.inertia) * dt + err * 1.5 * dt;\\n    car.omega -= car.omega * 2.6 * dt;\\n    car.omega = clamp(car.omega, -6, 6);\\n  } else {\",\"old\":\"  if (contactSum > 0) {\\n    // torque that makes the chassis follow the terrain slope\\n    var target = wrapAngle(Math.atan(groundSlope(car.x)));\\n    var err = wrapAngle(target - car.angle);\\n    car.omega += (totalTorque / car.inertia) * dt + 3.2 * err * dt + 2.2 * dt;\\n    car.omega -= car.omega * 2.2 * dt;\\n    car.omega = clamp(car.omega, -6, 6);\\n  } else {\",\"path\":\"game.js\"}"
+            }
+          }
+        ]
+      },
+      "finish_reason": "tool_calls"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 29847,
+    "completion_tokens": 287,
+    "total_tokens": 30134,
+    "prompt_tokens_details": {
+      "cached_tokens": 29822
+    }
+  },
+  "timings": {
+    "cache_n": 29822,
+    "prompt_n": 25,
+    "prompt_ms": 194.6,
+    "prompt_per_token_ms": 7.784,
+    "prompt_per_second": 128.5,
+    "predicted_n": 287,
+    "predicted_ms": 1475.4,
+    "predicted_per_token_ms": 5.141,
+    "predicted_per_second": 194.5,
+    "draft_n": 256,
+    "draft_n_accepted": 231
+  }
+}

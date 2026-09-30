@@ -1,0 +1,457 @@
+{
+  "harness": "Node VM, fake DOM; not a rendering test",
+  "samples": [
+    {
+      "time": 0,
+      "debug": "dist 0m | speed 0.0 | fuel 100% | coins 0 | state ready | angle 0.0deg",
+      "debugHTML": "",
+      "ui": {
+        "soundbtn": "SOUND: ON",
+        "dist": "0 m",
+        "best": "0 m",
+        "coins": "0 (bank 0)",
+        "fueltext": "fuel 100%",
+        "statename": "ready",
+        "title": "Ready to drive",
+        "msg": "Gas: Right / D — or press pedals on touch screens. P pause, R restart, M sound, G garage.",
+        "mainbtn": "Start driving"
+      }
+    },
+    {
+      "time": 5,
+      "debug": "dist 57m | speed NaN | fuel 95% | coins 0 | state drive | angle 0.0deg",
+      "debugHTML": "",
+      "ui": {
+        "soundbtn": "SOUND: ON",
+        "dist": "57 m",
+        "best": "57 m",
+        "coins": "0 (bank 0)",
+        "fueltext": "fuel 95%",
+        "statename": "drive",
+        "title": "Ready to drive",
+        "msg": "Gas: Right / D — or press pedals on touch screens. P pause, R restart, M sound, G garage.",
+        "mainbtn": "Start driving"
+      }
+    },
+    {
+      "time": 10,
+      "debug": "dist 140m | speed NaN | fuel 94% | coins 0 | state drive | angle 0.0deg",
+      "debugHTML": "",
+      "ui": {
+        "soundbtn": "SOUND: ON",
+        "dist": "140 m",
+        "best": "140 m",
+        "coins": "0 (bank 0)",
+        "fueltext": "fuel 94%",
+        "statename": "drive",
+        "title": "Ready to drive",
+        "msg": "Gas: Right / D — or press pedals on touch screens. P pause, R restart, M sound, G garage.",
+        "mainbtn": "Start driving"
+      }
+    },
+    {
+      "time": 15,
+      "debug": "dist 223m | speed NaN | fuel 93% | coins 0 | state drive | angle 0.0deg",
+      "debugHTML": "",
+      "ui": {
+        "soundbtn": "SOUND: ON",
+        "dist": "223 m",
+        "best": "223 m",
+        "coins": "0 (bank 0)",
+        "fueltext": "fuel 93%",
+        "statename": "drive",
+        "title": "Ready to drive",
+        "msg": "Gas: Right / D — or press pedals on touch screens. P pause, R restart, M sound, G garage.",
+        "mainbtn": "Start driving"
+      }
+    },
+    {
+      "time": 20,
+      "debug": "dist 306m | speed NaN | fuel 92% | coins 0 | state drive | angle 0.0deg",
+      "debugHTML": "",
+      "ui": {
+        "soundbtn": "SOUND: ON",
+        "dist": "306 m",
+        "best": "306 m",
+        "coins": "0 (bank 0)",
+        "fueltext": "fuel 92%",
+        "statename": "drive",
+        "title": "Ready to drive",
+        "msg": "Gas: Right / D — or press pedals on touch screens. P pause, R restart, M sound, G garage.",
+        "mainbtn": "Start driving"
+      }
+    },
+    {
+      "time": 25,
+      "debug": "dist 389m | speed NaN | fuel 91% | coins 0 | state drive | angle 0.0deg",
+      "debugHTML": "",
+      "ui": {
+        "soundbtn": "SOUND: ON",
+        "dist": "389 m",
+        "best": "389 m",
+        "coins": "0 (bank 0)",
+        "fueltext": "fuel 91%",
+        "statename": "drive",
+        "title": "Ready to drive",
+        "msg": "Gas: Right / D — or press pedals on touch screens. P pause, R restart, M sound, G garage.",
+        "mainbtn": "Start driving"
+      }
+    },
+    {
+      "time": 30,
+      "debug": "dist 472m | speed NaN | fuel 90% | coins 0 | state drive | angle 0.0deg",
+      "debugHTML": "",
+      "ui": {
+        "soundbtn": "SOUND: ON",
+        "dist": "472 m",
+        "best": "472 m",
+        "coins": "0 (bank 0)",
+        "fueltext": "fuel 90%",
+        "statename": "drive",
+        "title": "Ready to drive",
+        "msg": "Gas: Right / D — or press pedals on touch screens. P pause, R restart, M sound, G garage.",
+        "mainbtn": "Start driving"
+      }
+    },
+    {
+      "time": 35,
+      "debug": "dist 555m | speed NaN | fuel 89% | coins 0 | state drive | angle 0.0deg",
+      "debugHTML": "",
+      "ui": {
+        "soundbtn": "SOUND: ON",
+        "dist": "555 m",
+        "best": "555 m",
+        "coins": "0 (bank 0)",
+        "fueltext": "fuel 89%",
+        "statename": "drive",
+        "title": "Ready to drive",
+        "msg": "Gas: Right / D — or press pedals on touch screens. P pause, R restart, M sound, G garage.",
+        "mainbtn": "Start driving"
+      }
+    },
+    {
+      "time": 40,
+      "debug": "dist 638m | speed NaN | fuel 89% | coins 0 | state drive | angle 0.0deg",
+      "debugHTML": "",
+      "ui": {
+        "soundbtn": "SOUND: ON",
+        "dist": "638 m",
+        "best": "638 m",
+        "coins": "0 (bank 0)",
+        "fueltext": "fuel 89%",
+        "statename": "drive",
+        "title": "Ready to drive",
+        "msg": "Gas: Right / D — or press pedals on touch screens. P pause, R restart, M sound, G garage.",
+        "mainbtn": "Start driving"
+      }
+    },
+    {
+      "time": 45,
+      "debug": "dist 721m | speed NaN | fuel 88% | coins 0 | state drive | angle 0.0deg",
+      "debugHTML": "",
+      "ui": {
+        "soundbtn": "SOUND: ON",
+        "dist": "721 m",
+        "best": "721 m",
+        "coins": "0 (bank 0)",
+        "fueltext": "fuel 88%",
+        "statename": "drive",
+        "title": "Ready to drive",
+        "msg": "Gas: Right / D — or press pedals on touch screens. P pause, R restart, M sound, G garage.",
+        "mainbtn": "Start driving"
+      }
+    },
+    {
+      "time": 50,
+      "debug": "dist 804m | speed NaN | fuel 87% | coins 0 | state drive | angle 0.0deg",
+      "debugHTML": "",
+      "ui": {
+        "soundbtn": "SOUND: ON",
+        "dist": "804 m",
+        "best": "804 m",
+        "coins": "0 (bank 0)",
+        "fueltext": "fuel 87%",
+        "statename": "drive",
+        "title": "Ready to drive",
+        "msg": "Gas: Right / D — or press pedals on touch screens. P pause, R restart, M sound, G garage.",
+        "mainbtn": "Start driving"
+      }
+    },
+    {
+      "time": 55,
+      "debug": "dist 887m | speed NaN | fuel 86% | coins 0 | state drive | angle 0.0deg",
+      "debugHTML": "",
+      "ui": {
+        "soundbtn": "SOUND: ON",
+        "dist": "887 m",
+        "best": "887 m",
+        "coins": "0 (bank 0)",
+        "fueltext": "fuel 86%",
+        "statename": "drive",
+        "title": "Ready to drive",
+        "msg": "Gas: Right / D — or press pedals on touch screens. P pause, R restart, M sound, G garage.",
+        "mainbtn": "Start driving"
+      }
+    },
+    {
+      "time": 60,
+      "debug": "dist 970m | speed NaN | fuel 85% | coins 0 | state drive | angle 0.0deg",
+      "debugHTML": "",
+      "ui": {
+        "soundbtn": "SOUND: ON",
+        "dist": "970 m",
+        "best": "970 m",
+        "coins": "0 (bank 0)",
+        "fueltext": "fuel 85%",
+        "statename": "drive",
+        "title": "Ready to drive",
+        "msg": "Gas: Right / D — or press pedals on touch screens. P pause, R restart, M sound, G garage.",
+        "mainbtn": "Start driving"
+      }
+    },
+    {
+      "time": 65,
+      "debug": "dist 1053m | speed NaN | fuel 84% | coins 0 | state drive | angle 0.0deg",
+      "debugHTML": "",
+      "ui": {
+        "soundbtn": "SOUND: ON",
+        "dist": "1053 m",
+        "best": "1053 m",
+        "coins": "0 (bank 0)",
+        "fueltext": "fuel 84%",
+        "statename": "drive",
+        "title": "Ready to drive",
+        "msg": "Gas: Right / D — or press pedals on touch screens. P pause, R restart, M sound, G garage.",
+        "mainbtn": "Start driving"
+      }
+    },
+    {
+      "time": 70,
+      "debug": "dist 1136m | speed NaN | fuel 83% | coins 0 | state drive | angle 0.0deg",
+      "debugHTML": "",
+      "ui": {
+        "soundbtn": "SOUND: ON",
+        "dist": "1136 m",
+        "best": "1136 m",
+        "coins": "0 (bank 0)",
+        "fueltext": "fuel 83%",
+        "statename": "drive",
+        "title": "Ready to drive",
+        "msg": "Gas: Right / D — or press pedals on touch screens. P pause, R restart, M sound, G garage.",
+        "mainbtn": "Start driving"
+      }
+    },
+    {
+      "time": 75,
+      "debug": "dist 1219m | speed NaN | fuel 82% | coins 0 | state drive | angle 0.0deg",
+      "debugHTML": "",
+      "ui": {
+        "soundbtn": "SOUND: ON",
+        "dist": "1219 m",
+        "best": "1219 m",
+        "coins": "0 (bank 0)",
+        "fueltext": "fuel 82%",
+        "statename": "drive",
+        "title": "Ready to drive",
+        "msg": "Gas: Right / D — or press pedals on touch screens. P pause, R restart, M sound, G garage.",
+        "mainbtn": "Start driving"
+      }
+    },
+    {
+      "time": 80,
+      "debug": "dist 1302m | speed NaN | fuel 81% | coins 0 | state drive | angle 0.0deg",
+      "debugHTML": "",
+      "ui": {
+        "soundbtn": "SOUND: ON",
+        "dist": "1302 m",
+        "best": "1302 m",
+        "coins": "0 (bank 0)",
+        "fueltext": "fuel 81%",
+        "statename": "drive",
+        "title": "Ready to drive",
+        "msg": "Gas: Right / D — or press pedals on touch screens. P pause, R restart, M sound, G garage.",
+        "mainbtn": "Start driving"
+      }
+    },
+    {
+      "time": 85,
+      "debug": "dist 1385m | speed NaN | fuel 80% | coins 0 | state drive | angle 0.0deg",
+      "debugHTML": "",
+      "ui": {
+        "soundbtn": "SOUND: ON",
+        "dist": "1385 m",
+        "best": "1385 m",
+        "coins": "0 (bank 0)",
+        "fueltext": "fuel 80%",
+        "statename": "drive",
+        "title": "Ready to drive",
+        "msg": "Gas: Right / D — or press pedals on touch screens. P pause, R restart, M sound, G garage.",
+        "mainbtn": "Start driving"
+      }
+    },
+    {
+      "time": 90,
+      "debug": "dist 1468m | speed NaN | fuel 80% | coins 0 | state drive | angle 0.0deg",
+      "debugHTML": "",
+      "ui": {
+        "soundbtn": "SOUND: ON",
+        "dist": "1468 m",
+        "best": "1468 m",
+        "coins": "0 (bank 0)",
+        "fueltext": "fuel 80%",
+        "statename": "drive",
+        "title": "Ready to drive",
+        "msg": "Gas: Right / D — or press pedals on touch screens. P pause, R restart, M sound, G garage.",
+        "mainbtn": "Start driving"
+      }
+    },
+    {
+      "time": 95,
+      "debug": "dist 1551m | speed NaN | fuel 79% | coins 0 | state drive | angle 0.0deg",
+      "debugHTML": "",
+      "ui": {
+        "soundbtn": "SOUND: ON",
+        "dist": "1551 m",
+        "best": "1551 m",
+        "coins": "0 (bank 0)",
+        "fueltext": "fuel 79%",
+        "statename": "drive",
+        "title": "Ready to drive",
+        "msg": "Gas: Right / D — or press pedals on touch screens. P pause, R restart, M sound, G garage.",
+        "mainbtn": "Start driving"
+      }
+    },
+    {
+      "time": 100,
+      "debug": "dist 1634m | speed NaN | fuel 78% | coins 0 | state drive | angle 0.0deg",
+      "debugHTML": "",
+      "ui": {
+        "soundbtn": "SOUND: ON",
+        "dist": "1634 m",
+        "best": "1634 m",
+        "coins": "0 (bank 0)",
+        "fueltext": "fuel 78%",
+        "statename": "drive",
+        "title": "Ready to drive",
+        "msg": "Gas: Right / D — or press pedals on touch screens. P pause, R restart, M sound, G garage.",
+        "mainbtn": "Start driving"
+      }
+    },
+    {
+      "time": 105,
+      "debug": "dist 1717m | speed NaN | fuel 77% | coins 0 | state drive | angle 0.0deg",
+      "debugHTML": "",
+      "ui": {
+        "soundbtn": "SOUND: ON",
+        "dist": "1717 m",
+        "best": "1717 m",
+        "coins": "0 (bank 0)",
+        "fueltext": "fuel 77%",
+        "statename": "drive",
+        "title": "Ready to drive",
+        "msg": "Gas: Right / D — or press pedals on touch screens. P pause, R restart, M sound, G garage.",
+        "mainbtn": "Start driving"
+      }
+    },
+    {
+      "time": 110,
+      "debug": "dist 1800m | speed NaN | fuel 76% | coins 0 | state drive | angle 0.0deg",
+      "debugHTML": "",
+      "ui": {
+        "soundbtn": "SOUND: ON",
+        "dist": "1800 m",
+        "best": "1800 m",
+        "coins": "0 (bank 0)",
+        "fueltext": "fuel 76%",
+        "statename": "drive",
+        "title": "Ready to drive",
+        "msg": "Gas: Right / D — or press pedals on touch screens. P pause, R restart, M sound, G garage.",
+        "mainbtn": "Start driving"
+      }
+    },
+    {
+      "time": 115,
+      "debug": "dist 1883m | speed NaN | fuel 75% | coins 0 | state drive | angle 0.0deg",
+      "debugHTML": "",
+      "ui": {
+        "soundbtn": "SOUND: ON",
+        "dist": "1883 m",
+        "best": "1883 m",
+        "coins": "0 (bank 0)",
+        "fueltext": "fuel 75%",
+        "statename": "drive",
+        "title": "Ready to drive",
+        "msg": "Gas: Right / D — or press pedals on touch screens. P pause, R restart, M sound, G garage.",
+        "mainbtn": "Start driving"
+      }
+    },
+    {
+      "time": 120,
+      "debug": "dist 1966m | speed NaN | fuel 74% | coins 0 | state drive | angle 0.0deg",
+      "debugHTML": "",
+      "ui": {
+        "soundbtn": "SOUND: ON",
+        "dist": "1966 m",
+        "best": "1966 m",
+        "coins": "0 (bank 0)",
+        "fueltext": "fuel 74%",
+        "statename": "drive",
+        "title": "Ready to drive",
+        "msg": "Gas: Right / D — or press pedals on touch screens. P pause, R restart, M sound, G garage.",
+        "mainbtn": "Start driving"
+      }
+    },
+    {
+      "time": 122,
+      "debug": "dist 0m | speed 35.3 | fuel 100% | coins 0 | state drive | angle 0.0deg",
+      "debugHTML": "",
+      "ui": {
+        "soundbtn": "SOUND: ON",
+        "dist": "0 m",
+        "best": "1966 m",
+        "coins": "0 (bank 0)",
+        "fueltext": "fuel 100%",
+        "statename": "drive",
+        "title": "Paused",
+        "msg": "press P to continue, R to restart",
+        "mainbtn": "Continue"
+      },
+      "afterRestart": true
+    }
+  ],
+  "pauseBefore": {
+    "time": 120,
+    "debug": "dist 1966m | speed NaN | fuel 74% | coins 0 | state paused | angle 0.0deg",
+    "debugHTML": "",
+    "ui": {
+      "soundbtn": "SOUND: ON",
+      "dist": "1966 m",
+      "best": "1966 m",
+      "coins": "0 (bank 0)",
+      "fueltext": "fuel 74%",
+      "statename": "paused",
+      "title": "Paused",
+      "msg": "press P to continue, R to restart",
+      "mainbtn": "Continue"
+    }
+  },
+  "pauseAfter": {
+    "time": 122,
+    "debug": "dist 1966m | speed NaN | fuel 74% | coins 0 | state paused | angle 0.0deg",
+    "debugHTML": "",
+    "ui": {
+      "soundbtn": "SOUND: ON",
+      "dist": "1966 m",
+      "best": "1966 m",
+      "coins": "0 (bank 0)",
+      "fueltext": "fuel 74%",
+      "statename": "paused",
+      "title": "Paused",
+      "msg": "press P to continue, R to restart",
+      "mainbtn": "Continue"
+    }
+  },
+  "storage": {
+    "hillrider.save.v1": "{\"best\":1966,\"coins\":0,\"sound\":true,\"upgrades\":{\"engine\":0,\"suspension\":0,\"tank\":0}}"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "id": "chatcmpl-a7c7e83d32894af8b179fd76",
+  "object": "chat.completion",
+  "created": 1790806502,
+  "model": "qwen3.8-flash-next-iq2_xs",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": null,
+        "tool_calls": [
+          {
+            "id": "call_5293161f65cc441dadb9cadf",
+            "type": "function",
+            "function": {
+              "name": "replace_text",
+              "arguments": "{\"path\":\"game.js\",\"old\":\"function physics(dt) {\\n  var st = carStats();\\n  var k = st.springK, damp = st.damping, restLen = st.restLen;\\n  var sa = Math.sin(car.angle), ca = Math.cos(car.angle);\\n  var upx = -sa, upy = -ca;   // body-up direction in screen coords (up = -y)\\n\\n  /* suspension / ground contact */\\n  var totalUp = 0, totalTorque = 0, contactSum = 0;\\n  for (var i = 0; i < 2; i++) {\\n    var off = (i === 0 ? -car.wheelBase / 2 : car.wheelBase / 2);\\n    var wx = car.x + off * ca;\\n    var wy = car.y + off * sa;\\n    var gy = groundY(wx);\\n    var travel = clamp(gy - (wy + car.wheelR), 0, restLen + 8);\\n    var f = 0;\\n    if (travel > 0) {\\n      // spring force acts along the body-up axis; its moment arm about the chassis\\n      // centre is the perpendicular distance from the wheel to the body line.\\n      var px = wx - car.x, py = wy - car.y;\\n      var arm = px * upy - py * upx;           // cross(up, wheelOffset)\\n      var wheelVelUp = car.vy * upy + car.vx * upx + car.omega * arm;\\n      f = k * travel - damp * wheelVelUp;\\n      if (f < 0) f = 0;\\n      contactSum += 1;\\n    }\\n    totalUp += f;\\n    totalTorque += f * arm;\\n  }\\n  car.contact = contactSum;\\n\\n  // gravity + spring response\\n  car.vy += G * dt;\\n  car.vy -= (totalUp / car.mass) * dt;\\n  // gentle extra alignment torque so the chassis follows the slope\\n  if (contactSum > 0) car.omega += (totalTorque / car.inertia) * dt + 2.5 * dt;\\n  else car.omega += (totalTorque / car.inertia) * dt;\",\"new\":\"function wrapAngle(a) {\\n  while (a > Math.PI) a -= 2 * Math.PI;\\n  while (a < -Math.PI) a += 2 * Math.PI;\\n  return a;\\n}\\n\\nfunction physics(dt) {\\n  var st = carStats();\\n  var k = st.springK, damp = st.damping, restLen = st.restLen;\\n  var sa = Math.sin(car.angle), ca = Math.cos(car.angle);\\n  var upx = -sa, upy = -ca;   // body-up direction in screen coords (up = -y)\\n\\n  /* suspension / ground contact: vertical spring force + real moment arm,\\n     so the chassis is rotated by the terrain it rides on */\\n  var totalUp = 0, totalTorque = 0, contactSum = 0;\\n  var arms = [-car.wheelBase / 2, car.wheelBase / 2];\\n  for (var i = 0; i < 2; i++) {\\n    var off = arms[i];\\n    var wx = car.x + off * ca;\\n    var wy = car.y + off * sa;\\n    var gy = groundY(wx);\\n    var travel = clamp(gy - (wy + car.wheelR), 0, restLen + 8);\\n    var f = 0;\\n    if (travel > 0) {\\n      var px = wx - car.x, py = wy - car.y;\\n      var arm = px * upy - py * upx;           // cross(up, wheelOffset)\\n      var wheelVelUp = car.vy * upy + car.vx * upx + car.omega * arm;\\n      f = k * travel - damp * wheelVelUp;\\n      if (f < 0) f = 0;\\n      if (f > 3200) f = 3200;                  // solver guard\\n      contactSum += 1;\\n    }\\n    totalUp += f;\\n    totalTorque += f * arm;\\n  }\\n  car.contact = contactSum;\\n\\n  // gravity + spring response (linear + angular velocity integration)\\n  car.vy += G * dt;\\n  car.vy -= (totalUp / car.mass) * dt;\\n  if (contactSum > 0) {\\n    car.omega += (totalTorque / car.inertia) * dt + 2.5 * dt;   // slope-following torque\\n    car.omega -= car.omega * 3.2 * dt;\\n    car.omega = clamp(car.omega, -6, 6);\\n    car.omega = clamp(car.omega, -9 * dt, 9 * dt);\\n  } else {\\n    car.omega += (totalTorque / car.inertia) * dt;\\n    car.omega = clamp(car.omega, -6, 6);\\n  }\"}"
+            }
+          }
+        ]
+      },
+      "finish_reason": "tool_calls"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 23301,
+    "completion_tokens": 1191,
+    "total_tokens": 24492,
+    "prompt_tokens_details": {
+      "cached_tokens": 23278
+    }
+  },
+  "timings": {
+    "cache_n": 23278,
+    "prompt_n": 23,
+    "prompt_ms": 136.6,
+    "prompt_per_token_ms": 5.939,
+    "prompt_per_second": 168.4,
+    "predicted_n": 1191,
+    "predicted_ms": 6290.3,
+    "predicted_per_token_ms": 5.282,
+    "predicted_per_second": 189.3,
+    "draft_n": 1028,
+    "draft_n_accepted": 903
+  }
+}

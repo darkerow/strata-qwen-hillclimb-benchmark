@@ -1,0 +1,47 @@
+{
+  "id": "chatcmpl-9bb1afbe51844971a2b7734c",
+  "object": "chat.completion",
+  "created": 1790806336,
+  "model": "qwen3.8-flash-next-iq2_xs",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": null,
+        "tool_calls": [
+          {
+            "id": "call_69261e35e4fe438ca0e2e663",
+            "type": "function",
+            "function": {
+              "name": "replace_text",
+              "arguments": "{\"path\":\"game.js\",\"old\":\"  var sa = Math.sin(car.angle), ca = Math.cos(car.angle);\\n\\n  /* suspension / ground contact */\\n  var totalUp = 0, totalTorque = 0, contactSum = 0;\",\"new\":\"  var sa = Math.sin(car.angle), ca = Math.cos(car.angle);\\n  var upx = -sa, upy = -ca;   // body-up direction in screen coords (up = -y)\\n\\n  /* suspension / ground contact */\\n  var totalUp = 0, totalTorque = 0, contactSum = 0;\"}"
+            }
+          }
+        ]
+      },
+      "finish_reason": "tool_calls"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 53554,
+    "completion_tokens": 169,
+    "total_tokens": 53723,
+    "prompt_tokens_details": {
+      "cached_tokens": 53531
+    }
+  },
+  "timings": {
+    "cache_n": 53531,
+    "prompt_n": 23,
+    "prompt_ms": 142.0,
+    "prompt_per_token_ms": 6.174,
+    "prompt_per_second": 162.0,
+    "predicted_n": 169,
+    "predicted_ms": 859.2,
+    "predicted_per_token_ms": 5.084,
+    "predicted_per_second": 196.7,
+    "draft_n": 144,
+    "draft_n_accepted": 133
+  }
+}

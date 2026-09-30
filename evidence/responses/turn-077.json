@@ -1,0 +1,47 @@
+{
+  "id": "chatcmpl-f4aea80a95db40aa8d714df5",
+  "object": "chat.completion",
+  "created": 1790806658,
+  "model": "qwen3.8-flash-next-iq2_xs",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": null,
+        "tool_calls": [
+          {
+            "id": "call_4cd03a21e0d745909a645781",
+            "type": "function",
+            "function": {
+              "name": "replace_text",
+              "arguments": "{\"new\":\"    car.omega += (totalTorque / car.inertia) * dt + err * 1.2 * dt;\\n    car.omega -= car.omega * 4.2 * dt;\\n    car.omega = clamp(car.omega, -3, 3);\",\"old\":\"    car.omega += (totalTorque / car.inertia) * dt + err * 1.2 * dt;\\n    car.omega -= car.omega * 3.6 * dt;\\n    car.omega = clamp(car.omega, -4, 4);\",\"path\":\"game.js\"}"
+            }
+          }
+        ]
+      },
+      "finish_reason": "tool_calls"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 43616,
+    "completion_tokens": 168,
+    "total_tokens": 43784,
+    "prompt_tokens_details": {
+      "cached_tokens": 43593
+    }
+  },
+  "timings": {
+    "cache_n": 43593,
+    "prompt_n": 23,
+    "prompt_ms": 144.2,
+    "prompt_per_token_ms": 6.27,
+    "prompt_per_second": 159.5,
+    "predicted_n": 168,
+    "predicted_ms": 955.2,
+    "predicted_per_token_ms": 5.686,
+    "predicted_per_second": 175.9,
+    "draft_n": 157,
+    "draft_n_accepted": 131
+  }
+}

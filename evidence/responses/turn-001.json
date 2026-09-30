@@ -1,0 +1,55 @@
+{
+  "id": "chatcmpl-78756226dd9c447ead6f0b40",
+  "object": "chat.completion",
+  "created": 1790805870,
+  "model": "qwen3.8-flash-next-iq2_xs",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": null,
+        "tool_calls": [
+          {
+            "id": "call_61bbdfb1878c412d8d6c1a76",
+            "type": "function",
+            "function": {
+              "name": "write_file",
+              "arguments": "{\"path\":\"index.html\",\"content\":\"<!DOCTYPE html>\\n<html lang=\\\"ru\\\">\\n<head>\\n<meta charset=\\\"utf-8\\\">\\n<meta name=\\\"viewport\\\" content=\\\"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\\\">\\n<title>Hill Rider \\u2014 hill climb driving game</title>\\n<link rel=\\\"stylesheet\\\" href=\\\"style.css\\\">\\n</head>\\n<body>\\n<div id=\\\"stage\\\">\\n  <canvas id=\\\"game\\\"></canvas>\\n\\n  <div id=\\\"ui\\\">\\n    <div id=\\\"panel\\\">\\n      <div class=\\\"brand\\\">HILL RIDER</div>\\n      <div class=\\\"row\\\"><span class=\\\"lbl\\\">Distance</span><span id=\\\"dist\\\">0 m</span></div>\\n      <div class=\\\"row\\\"><span class=\\\"lbl\\\">Best</span><span id=\\\"best\\\">0 m</span></div>\\n      <div class=\\\"row\\\"><span class=\\\"lbl\\\">Coins</span><span id=\\\"coins\\\">0</span></div>\\n      <div class=\\\"bar\\\"><div id=\\\"fuelbar\\\"></div></div>\\n      <div class=\\\"row small\\\"><span id=\\\"fueltext\\\">fuel 100%</span><span id=\\\"statename\\\">drive</span></div>\\n    </div>\\n\\n    <div id=\\\"hint\\\">\\n      <div><b>Gas</b> \\u2014 Right / D &nbsp; <b>Brake</b> \\u2014 Left / A</div>\\n      <div><b>P</b> pause &nbsp; <b>R</b> restart &nbsp; <b>M</b> sound &nbsp; <b>G</b> garage</div>\\n    </div>\\n\\n    <button id=\\\"soundbtn\\\" type=\\\"button\\\" title=\\\"Sound on/off\\\">SOUND: ON</button>\\n    <button id=\\\"garagebtn\\\" type=\\\"button\\\" title=\\\"Garage upgrades\\\">GARAGE</button>\\n  </div>\\n\\n  <div id=\\\"pedals\\\">\\n    <button id=\\\"brakePedal\\\" class=\\\"pedal left\\\" type=\\\"button\\\">&#9664; BRAKE</button>\\n    <button id=\\\"gasPedal\\\" class=\\\"pedal right\\\" type=\\\"button\\\">GAS &#9654;</button>\\n  </div>\\n\\n  <div id=\\\"overlay\\\" class=\\\"hidden\\\">\\n    <div id=\\\"card\\\">\\n      <h1 id=\\\"title\\\">Paused</h1>\\n      <p id=\\\"msg\\\">press P to continue</p>\\n      <button id=\\\"mainbtn\\\" type=\\\"button\\\">Continue</button>\\n    </div>\\n  </div>\\n\\n  <div id=\\\"garage\\\" class=\\\"hidden\\\">\\n    <div id=\\\"gcard\\\">\\n      <h1>Garage</h1>\\n      <p id=\\\"gmsg\\\">Upgrades are saved locally.</p>\\n      <div id=\\\"upgrades\\\"></div>\\n      <button id=\\\"garageclose\\\" type=\\\"button\\\">Close garage</button>\\n    </div>\\n  </div>\\n\\n  <div id=\\\"debug\\\"></div>\\n</div>\\n<script src=\\\"game.js\\\"></script>\\n</body>\\n</html>\\n\"}"
+            }
+          },
+          {
+            "id": "call_a5309254e7a94172a1d16343",
+            "type": "function",
+            "function": {
+              "name": "write_file",
+              "arguments": "{\"path\":\"style.css\",\"content\":\"* { box-sizing: border-box; }\\nhtml, body { margin: 0; height: 100%; background: #1b2430; overflow: hidden; font-family: \\\"Segoe UI\\\", system-ui, sans-serif; }\\n#stage { position: fixed; inset: 0; }\\n#game { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }\\n\\n#ui { position: absolute; left: 14px; top: 14px; z-index: 5; color: #f4f7fb; user-select: none; }\\n#panel { background: rgba(16, 22, 30, .62); border: 1px solid rgba(255,255,255,.14); border-radius: 10px; padding: 10px 14px; min-width: 232px; }\\n.brand { font-size: 15px; letter-spacing: 2px; font-weight: 700; color: #ffd27a; margin-bottom: 8px; }\\n.row { display: flex; justify-content: space-between; font-size: 14px; margin: 3px 0; }\\n.row.small { font-size: 12px; color: #b9c4d2; margin-top: 6px; }\\n.lbl { color: #8f9db0; }\\n.bar { height: 8px; border-radius: 4px; background: rgba(255,255,255,.12); margin-top: 8px; overflow: hidden; }\\n#fuelbar { height: 100%; width: 100%; background: linear-gradient(90deg, #7fd07f, #ffd27a); transition: width .2s linear; }\\n\\n#hint { margin-top: 10px; font-size: 12px; color: #c2cdd9; background: rgba(16,22,30,.45); border-radius: 8px; padding: 8px 10px; line-height: 1.6; }\\n#hint b { color: #ffd27a; }\\n\\n#soundbtn, #garagebtn {\\n  position: absolute; top: 14px; z-index: 6; cursor: pointer;\\n  background: rgba(16,22,30,.62); color: #f4f7fb; border: 1px solid rgba(255,255,255,.16);\\n  border-radius: 8px; padding: 8px 12px; font-size: 12px; letter-spacing: 1px;\\n}\\n#soundbtn { right: 14px; }\\n#garagebtn { right: 130px; }\\n\\n#pedals { position: absolute; left: 0; right: 0; bottom: 16px; z-index: 6; display: flex; justify-content: space-between; padding: 0 16px; pointer-events: none; }\\n.pedal { pointer-events: auto; cursor: pointer; font-size: 13px; letter-spacing: 1px; padding: 12px 18px; border-radius: 12px;\\n  background: rgba(16,22,30,.55); color: #f4f7fb; border: 1px solid rgba(255,255,255,.18); }\\n.pedal.active { background: #ffd27a; color: #1b2430; }\\n\\n#overlay { position: absolute; inset: 0; z-index: 7; display: flex; align-items: center; justify-content: center; background: rgba(10,14,20,.45); }\\n#overlay.hidden, #garage.hidden { display: none; }\\n#card, #gcard { background: rgba(20,27,36,.92); border: 1px solid rgba(255,255,255,.16); border-radius: 14px; padding: 22px 26px; text-align: center; color: #f4f7fb; min-width: 300px; }\\n#card h1, #gcard h1 { margin: 0 0 8px; font-size: 22px; color: #ffd27a; }\\n#card p, #gcard p { margin: 0 0 14px; color: #b9c4d2; font-size: 13px; }\\n#mainbtn, #garageclose { cursor: pointer; background: #ffd27a; border: 0; border-radius: 8px; padding: 9px 16px; font-size: 14px; }\\n#upgrades { display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; margin-bottom: 14px; }\\n.upg { background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.14); border-radius: 10px; padding: 10px 12px; font-size: 12px; cursor: pointer; color: #f4f7fb; }\\n.upg:disabled { opacity: .55; cursor: default; }\\n.upg span { display: block; color: #ffd27a; margin-top: 4px; }\\n\\n#debug {\\n  position: absolute; right: 14px; bottom: 70px; z-index: 6;\\n  font: 11px/1.5 monospace; color: #9fb0c2; background: rgba(12,17,24,.55);\\n  border: 1px solid rgba(255,255,255,.12); border-radius: 6px; padding: 6px 8px;\\n  max-width: 250px; pointer-events: none;\\n}\\n\"}"
+            }
+          }
+        ]
+      },
+      "finish_reason": "tool_calls"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 962,
+    "completion_tokens": 2185,
+    "total_tokens": 3147,
+    "prompt_tokens_details": {
+      "cached_tokens": 955
+    }
+  },
+  "timings": {
+    "cache_n": 955,
+    "prompt_n": 7,
+    "prompt_ms": 40.3,
+    "prompt_per_token_ms": 5.757,
+    "prompt_per_second": 173.7,
+    "predicted_n": 2185,
+    "predicted_ms": 13175.0,
+    "predicted_per_token_ms": 6.03,
+    "predicted_per_second": 165.8,
+    "draft_n": 1824,
+    "draft_n_accepted": 1544
+  }
+}

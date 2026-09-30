@@ -1,0 +1,5 @@
+{
+  "browser": "Latest version renders; Start works; still top-left SOUND/GARAGE buttons overlap HILL RIDER title. Body is visibly horizontal while wheels are uneven on slope.",
+  "simulation": "Unmodified game Node VM test holding gas for 120 simulated seconds: distance 58m at5s,506m at30s,881m at60s; fuel drains; 3 coins collected; game over out of fuel at ~70s/901m and coins banked. R resets to0m/fuel100%. EVERY diagnostic angle sample is 0.0deg. No refuel observed.",
+  "request": "Fix the stuck body angle and layout. Then test and finish with README. Do not merely say fixed: verify."
+}

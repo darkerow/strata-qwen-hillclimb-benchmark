@@ -1,0 +1,1163 @@
+{
+  "finished": false,
+  "effort": "none",
+  "seconds": 551.4322423934937,
+  "error": "HTTP Error 400: Bad Request",
+  "metrics": [
+    {
+      "turn": 1,
+      "seconds": 29.759509563446045,
+      "usage": {
+        "prompt_tokens": 962,
+        "completion_tokens": 2185,
+        "total_tokens": 3147,
+        "prompt_tokens_details": {
+          "cached_tokens": 955
+        }
+      },
+      "timings": {
+        "cache_n": 955,
+        "prompt_n": 7,
+        "prompt_ms": 40.3,
+        "prompt_per_token_ms": 5.757,
+        "prompt_per_second": 173.7,
+        "predicted_n": 2185,
+        "predicted_ms": 13175.0,
+        "predicted_per_token_ms": 6.03,
+        "predicted_per_second": 165.8,
+        "draft_n": 1824,
+        "draft_n_accepted": 1544
+      }
+    },
+    {
+      "turn": 2,
+      "seconds": 61.13709878921509,
+      "usage": {
+        "prompt_tokens": 3201,
+        "completion_tokens": 9520,
+        "total_tokens": 12721,
+        "prompt_tokens_details": {
+          "cached_tokens": 3149
+        }
+      },
+      "timings": {
+        "cache_n": 3149,
+        "prompt_n": 52,
+        "prompt_ms": 367.6,
+        "prompt_per_token_ms": 7.069,
+        "prompt_per_second": 141.5,
+        "predicted_n": 9520,
+        "predicted_ms": 60720.0,
+        "predicted_per_token_ms": 6.378,
+        "predicted_per_second": 156.8,
+        "draft_n": 8045,
+        "draft_n_accepted": 6450
+      }
+    },
+    {
+      "turn": 3,
+      "seconds": 0.5054125785827637,
+      "usage": {
+        "prompt_tokens": 12755,
+        "completion_tokens": 15,
+        "total_tokens": 12770,
+        "prompt_tokens_details": {
+          "cached_tokens": 12720
+        }
+      },
+      "timings": {
+        "cache_n": 12720,
+        "prompt_n": 35,
+        "prompt_ms": 258.9,
+        "prompt_per_token_ms": 7.397,
+        "prompt_per_second": 135.2,
+        "predicted_n": 15,
+        "predicted_ms": 141.9,
+        "predicted_per_token_ms": 9.46,
+        "predicted_per_second": 105.7,
+        "draft_n": 14,
+        "draft_n_accepted": 12
+      }
+    },
+    {
+      "turn": 4,
+      "seconds": 2.805795669555664,
+      "usage": {
+        "prompt_tokens": 12803,
+        "completion_tokens": 409,
+        "total_tokens": 13212,
+        "prompt_tokens_details": {
+          "cached_tokens": 12771
+        }
+      },
+      "timings": {
+        "cache_n": 12771,
+        "prompt_n": 32,
+        "prompt_ms": 232.3,
+        "prompt_per_token_ms": 7.259,
+        "prompt_per_second": 137.8,
+        "predicted_n": 409,
+        "predicted_ms": 2504.5,
+        "predicted_per_token_ms": 6.123,
+        "predicted_per_second": 163.3,
+        "draft_n": 357,
+        "draft_n_accepted": 303
+      }
+    },
+    {
+      "turn": 5,
+      "seconds": 0.9988272190093994,
+      "usage": {
+        "prompt_tokens": 13246,
+        "completion_tokens": 116,
+        "total_tokens": 13362,
+        "prompt_tokens_details": {
+          "cached_tokens": 13214
+        }
+      },
+      "timings": {
+        "cache_n": 13214,
+        "prompt_n": 32,
+        "prompt_ms": 195.2,
+        "prompt_per_token_ms": 6.1,
+        "prompt_per_second": 163.9,
+        "predicted_n": 116,
+        "predicted_ms": 634.6,
+        "predicted_per_token_ms": 5.471,
+        "predicted_per_second": 182.8,
+        "draft_n": 99,
+        "draft_n_accepted": 85
+      }
+    },
+    {
+      "turn": 6,
+      "seconds": 0.8145718574523926,
+      "usage": {
+        "prompt_tokens": 13385,
+        "completion_tokens": 99,
+        "total_tokens": 13484,
+        "prompt_tokens_details": {
+          "cached_tokens": 13361
+        }
+      },
+      "timings": {
+        "cache_n": 13361,
+        "prompt_n": 24,
+        "prompt_ms": 158.9,
+        "prompt_per_token_ms": 6.621,
+        "prompt_per_second": 151.0,
+        "predicted_n": 99,
+        "predicted_ms": 554.3,
+        "predicted_per_token_ms": 5.599,
+        "predicted_per_second": 178.6,
+        "draft_n": 88,
+        "draft_n_accepted": 72
+      }
+    },
+    {
+      "turn": 7,
+      "seconds": 0.8956995010375977,
+      "usage": {
+        "prompt_tokens": 13507,
+        "completion_tokens": 108,
+        "total_tokens": 13615,
+        "prompt_tokens_details": {
+          "cached_tokens": 13484
+        }
+      },
+      "timings": {
+        "cache_n": 13484,
+        "prompt_n": 23,
+        "prompt_ms": 141.6,
+        "prompt_per_token_ms": 6.157,
+        "prompt_per_second": 162.4,
+        "predicted_n": 108,
+        "predicted_ms": 599.6,
+        "predicted_per_token_ms": 5.552,
+        "predicted_per_second": 180.1,
+        "draft_n": 92,
+        "draft_n_accepted": 79
+      }
+    },
+    {
+      "turn": 8,
+      "seconds": 1.5488595962524414,
+      "usage": {
+        "prompt_tokens": 13638,
+        "completion_tokens": 205,
+        "total_tokens": 13843,
+        "prompt_tokens_details": {
+          "cached_tokens": 13614
+        }
+      },
+      "timings": {
+        "cache_n": 13614,
+        "prompt_n": 24,
+        "prompt_ms": 136.8,
+        "prompt_per_token_ms": 5.7,
+        "prompt_per_second": 175.4,
+        "predicted_n": 205,
+        "predicted_ms": 1266.1,
+        "predicted_per_token_ms": 6.176,
+        "predicted_per_second": 161.9,
+        "draft_n": 171,
+        "draft_n_accepted": 147
+      }
+    },
+    {
+      "turn": 9,
+      "seconds": 1.1842775344848633,
+      "usage": {
+        "prompt_tokens": 13877,
+        "completion_tokens": 170,
+        "total_tokens": 14047,
+        "prompt_tokens_details": {
+          "cached_tokens": 13845
+        }
+      },
+      "timings": {
+        "cache_n": 13845,
+        "prompt_n": 32,
+        "prompt_ms": 173.1,
+        "prompt_per_token_ms": 5.409,
+        "prompt_per_second": 184.9,
+        "predicted_n": 170,
+        "predicted_ms": 951.9,
+        "predicted_per_token_ms": 5.599,
+        "predicted_per_second": 178.6,
+        "draft_n": 146,
+        "draft_n_accepted": 126
+      }
+    },
+    {
+      "turn": 10,
+      "seconds": 1.27870774269104,
+      "usage": {
+        "prompt_tokens": 14070,
+        "completion_tokens": 191,
+        "total_tokens": 14261,
+        "prompt_tokens_details": {
+          "cached_tokens": 14049
+        }
+      },
+      "timings": {
+        "cache_n": 14049,
+        "prompt_n": 21,
+        "prompt_ms": 129.1,
+        "prompt_per_token_ms": 6.148,
+        "prompt_per_second": 162.7,
+        "predicted_n": 191,
+        "predicted_ms": 1040.3,
+        "predicted_per_token_ms": 5.447,
+        "predicted_per_second": 183.6,
+        "draft_n": 163,
+        "draft_n_accepted": 143
+      }
+    },
+    {
+      "turn": 11,
+      "seconds": 0.7979235649108887,
+      "usage": {
+        "prompt_tokens": 14284,
+        "completion_tokens": 113,
+        "total_tokens": 14397,
+        "prompt_tokens_details": {
+          "cached_tokens": 14263
+        }
+      },
+      "timings": {
+        "cache_n": 14263,
+        "prompt_n": 21,
+        "prompt_ms": 130.4,
+        "prompt_per_token_ms": 6.21,
+        "prompt_per_second": 161.0,
+        "predicted_n": 113,
+        "predicted_ms": 598.3,
+        "predicted_per_token_ms": 5.295,
+        "predicted_per_second": 188.9,
+        "draft_n": 98,
+        "draft_n_accepted": 87
+      }
+    },
+    {
+      "turn": 12,
+      "seconds": 0.9501869678497314,
+      "usage": {
+        "prompt_tokens": 14420,
+        "completion_tokens": 137,
+        "total_tokens": 14557,
+        "prompt_tokens_details": {
+          "cached_tokens": 14399
+        }
+      },
+      "timings": {
+        "cache_n": 14399,
+        "prompt_n": 21,
+        "prompt_ms": 131.2,
+        "prompt_per_token_ms": 6.248,
+        "prompt_per_second": 160.1,
+        "predicted_n": 137,
+        "predicted_ms": 748.0,
+        "predicted_per_token_ms": 5.46,
+        "predicted_per_second": 183.2,
+        "draft_n": 119,
+        "draft_n_accepted": 107
+      }
+    },
+    {
+      "turn": 13,
+      "seconds": 0.963475227355957,
+      "usage": {
+        "prompt_tokens": 14580,
+        "completion_tokens": 139,
+        "total_tokens": 14719,
+        "prompt_tokens_details": {
+          "cached_tokens": 14561
+        }
+      },
+      "timings": {
+        "cache_n": 14561,
+        "prompt_n": 19,
+        "prompt_ms": 117.7,
+        "prompt_per_token_ms": 6.195,
+        "prompt_per_second": 161.4,
+        "predicted_n": 139,
+        "predicted_ms": 778.9,
+        "predicted_per_token_ms": 5.604,
+        "predicted_per_second": 178.5,
+        "draft_n": 121,
+        "draft_n_accepted": 105
+      }
+    },
+    {
+      "turn": 14,
+      "seconds": 0.7105906009674072,
+      "usage": {
+        "prompt_tokens": 14742,
+        "completion_tokens": 94,
+        "total_tokens": 14836,
+        "prompt_tokens_details": {
+          "cached_tokens": 14721
+        }
+      },
+      "timings": {
+        "cache_n": 14721,
+        "prompt_n": 21,
+        "prompt_ms": 130.4,
+        "prompt_per_token_ms": 6.21,
+        "prompt_per_second": 161.0,
+        "predicted_n": 94,
+        "predicted_ms": 459.8,
+        "predicted_per_token_ms": 4.891,
+        "predicted_per_second": 204.4,
+        "draft_n": 77,
+        "draft_n_accepted": 75
+      }
+    },
+    {
+      "turn": 15,
+      "seconds": 1.072371006011963,
+      "usage": {
+        "prompt_tokens": 14859,
+        "completion_tokens": 160,
+        "total_tokens": 15019,
+        "prompt_tokens_details": {
+          "cached_tokens": 14838
+        }
+      },
+      "timings": {
+        "cache_n": 14838,
+        "prompt_n": 21,
+        "prompt_ms": 130.2,
+        "prompt_per_token_ms": 6.2,
+        "prompt_per_second": 161.3,
+        "predicted_n": 160,
+        "predicted_ms": 820.8,
+        "predicted_per_token_ms": 5.13,
+        "predicted_per_second": 194.9,
+        "draft_n": 135,
+        "draft_n_accepted": 126
+      }
+    },
+    {
+      "turn": 16,
+      "seconds": 0.8112480640411377,
+      "usage": {
+        "prompt_tokens": 15042,
+        "completion_tokens": 124,
+        "total_tokens": 15166,
+        "prompt_tokens_details": {
+          "cached_tokens": 15021
+        }
+      },
+      "timings": {
+        "cache_n": 15021,
+        "prompt_n": 21,
+        "prompt_ms": 130.0,
+        "prompt_per_token_ms": 6.19,
+        "prompt_per_second": 161.5,
+        "predicted_n": 124,
+        "predicted_ms": 618.0,
+        "predicted_per_token_ms": 4.984,
+        "predicted_per_second": 200.6,
+        "draft_n": 102,
+        "draft_n_accepted": 93
+      }
+    },
+    {
+      "turn": 17,
+      "seconds": 0.40557146072387695,
+      "usage": {
+        "prompt_tokens": 15189,
+        "completion_tokens": 26,
+        "total_tokens": 15215,
+        "prompt_tokens_details": {
+          "cached_tokens": 15165
+        }
+      },
+      "timings": {
+        "cache_n": 15165,
+        "prompt_n": 24,
+        "prompt_ms": 134.9,
+        "prompt_per_token_ms": 5.621,
+        "prompt_per_second": 177.9,
+        "predicted_n": 26,
+        "predicted_ms": 202.4,
+        "predicted_per_token_ms": 7.785,
+        "predicted_per_second": 128.5,
+        "draft_n": 27,
+        "draft_n_accepted": 20
+      }
+    },
+    {
+      "turn": 18,
+      "seconds": 4.550297260284424,
+      "usage": {
+        "prompt_tokens": 25080,
+        "completion_tokens": 116,
+        "total_tokens": 25196,
+        "prompt_tokens_details": {
+          "cached_tokens": 15217
+        }
+      },
+      "timings": {
+        "cache_n": 15217,
+        "prompt_n": 9863,
+        "prompt_ms": 3682.5,
+        "prompt_per_token_ms": 0.373,
+        "prompt_per_second": 2678.3,
+        "predicted_n": 116,
+        "predicted_ms": 769.9,
+        "predicted_per_token_ms": 6.637,
+        "predicted_per_second": 150.7,
+        "draft_n": 106,
+        "draft_n_accepted": 80
+      }
+    },
+    {
+      "turn": 19,
+      "seconds": 0.9206242561340332,
+      "usage": {
+        "prompt_tokens": 25219,
+        "completion_tokens": 124,
+        "total_tokens": 25343,
+        "prompt_tokens_details": {
+          "cached_tokens": 25197
+        }
+      },
+      "timings": {
+        "cache_n": 25197,
+        "prompt_n": 22,
+        "prompt_ms": 134.6,
+        "prompt_per_token_ms": 6.118,
+        "prompt_per_second": 163.4,
+        "predicted_n": 124,
+        "predicted_ms": 649.3,
+        "predicted_per_token_ms": 5.236,
+        "predicted_per_second": 191.0,
+        "draft_n": 103,
+        "draft_n_accepted": 94
+      }
+    },
+    {
+      "turn": 20,
+      "seconds": 8.587462425231934,
+      "usage": {
+        "prompt_tokens": 25366,
+        "completion_tokens": 1526,
+        "total_tokens": 26892,
+        "prompt_tokens_details": {
+          "cached_tokens": 25342
+        }
+      },
+      "timings": {
+        "cache_n": 25342,
+        "prompt_n": 24,
+        "prompt_ms": 135.8,
+        "prompt_per_token_ms": 5.658,
+        "prompt_per_second": 176.7,
+        "predicted_n": 1526,
+        "predicted_ms": 8349.1,
+        "predicted_per_token_ms": 5.471,
+        "predicted_per_second": 182.8,
+        "draft_n": 1313,
+        "draft_n_accepted": 1149
+      }
+    },
+    {
+      "turn": 21,
+      "seconds": 0.8179314136505127,
+      "usage": {
+        "prompt_tokens": 26915,
+        "completion_tokens": 51,
+        "total_tokens": 26966,
+        "prompt_tokens_details": {
+          "cached_tokens": 26893
+        }
+      },
+      "timings": {
+        "cache_n": 26893,
+        "prompt_n": 22,
+        "prompt_ms": 178.3,
+        "prompt_per_token_ms": 8.105,
+        "prompt_per_second": 123.4,
+        "predicted_n": 51,
+        "predicted_ms": 533.8,
+        "predicted_per_token_ms": 10.467,
+        "predicted_per_second": 95.5,
+        "draft_n": 42,
+        "draft_n_accepted": 33
+      }
+    },
+    {
+      "turn": 22,
+      "seconds": 55.223403215408325,
+      "usage": {
+        "prompt_tokens": 38272,
+        "completion_tokens": 9256,
+        "total_tokens": 47528,
+        "prompt_tokens_details": {
+          "cached_tokens": 26968
+        }
+      },
+      "timings": {
+        "cache_n": 26968,
+        "prompt_n": 11304,
+        "prompt_ms": 3297.0,
+        "prompt_per_token_ms": 0.292,
+        "prompt_per_second": 3428.6,
+        "predicted_n": 9256,
+        "predicted_ms": 51774.1,
+        "predicted_per_token_ms": 5.594,
+        "predicted_per_second": 178.8,
+        "draft_n": 7785,
+        "draft_n_accepted": 7118
+      }
+    },
+    {
+      "turn": 23,
+      "seconds": 0.5486900806427002,
+      "usage": {
+        "prompt_tokens": 47562,
+        "completion_tokens": 15,
+        "total_tokens": 47577,
+        "prompt_tokens_details": {
+          "cached_tokens": 47527
+        }
+      },
+      "timings": {
+        "cache_n": 47527,
+        "prompt_n": 35,
+        "prompt_ms": 267.5,
+        "prompt_per_token_ms": 7.643,
+        "prompt_per_second": 130.8,
+        "predicted_n": 15,
+        "predicted_ms": 124.8,
+        "predicted_per_token_ms": 8.32,
+        "predicted_per_second": 120.2,
+        "draft_n": 13,
+        "draft_n_accepted": 11
+      }
+    },
+    {
+      "turn": 24,
+      "seconds": 1.3008625507354736,
+      "usage": {
+        "prompt_tokens": 47610,
+        "completion_tokens": 138,
+        "total_tokens": 47748,
+        "prompt_tokens_details": {
+          "cached_tokens": 47576
+        }
+      },
+      "timings": {
+        "cache_n": 47576,
+        "prompt_n": 34,
+        "prompt_ms": 246.8,
+        "prompt_per_token_ms": 7.259,
+        "prompt_per_second": 137.8,
+        "predicted_n": 138,
+        "predicted_ms": 896.1,
+        "predicted_per_token_ms": 6.493,
+        "predicted_per_second": 154.0,
+        "draft_n": 128,
+        "draft_n_accepted": 107
+      }
+    },
+    {
+      "turn": 25,
+      "seconds": 1.155595302581787,
+      "usage": {
+        "prompt_tokens": 47771,
+        "completion_tokens": 138,
+        "total_tokens": 47909,
+        "prompt_tokens_details": {
+          "cached_tokens": 47750
+        }
+      },
+      "timings": {
+        "cache_n": 47750,
+        "prompt_n": 21,
+        "prompt_ms": 150.9,
+        "prompt_per_token_ms": 7.186,
+        "prompt_per_second": 139.2,
+        "predicted_n": 138,
+        "predicted_ms": 797.1,
+        "predicted_per_token_ms": 5.776,
+        "predicted_per_second": 173.1,
+        "draft_n": 115,
+        "draft_n_accepted": 109
+      }
+    },
+    {
+      "turn": 26,
+      "seconds": 0.4848642349243164,
+      "usage": {
+        "prompt_tokens": 47932,
+        "completion_tokens": 27,
+        "total_tokens": 47959,
+        "prompt_tokens_details": {
+          "cached_tokens": 47911
+        }
+      },
+      "timings": {
+        "cache_n": 47911,
+        "prompt_n": 21,
+        "prompt_ms": 144.5,
+        "prompt_per_token_ms": 6.881,
+        "prompt_per_second": 145.3,
+        "predicted_n": 27,
+        "predicted_ms": 186.1,
+        "predicted_per_token_ms": 6.893,
+        "predicted_per_second": 145.1,
+        "draft_n": 22,
+        "draft_n_accepted": 20
+      }
+    },
+    {
+      "turn": 27,
+      "seconds": 2.853778123855591,
+      "usage": {
+        "prompt_tokens": 49329,
+        "completion_tokens": 194,
+        "total_tokens": 49523,
+        "prompt_tokens_details": {
+          "cached_tokens": 47959
+        }
+      },
+      "timings": {
+        "cache_n": 47959,
+        "prompt_n": 1370,
+        "prompt_ms": 1400.6,
+        "prompt_per_token_ms": 1.022,
+        "prompt_per_second": 978.2,
+        "predicted_n": 194,
+        "predicted_ms": 1290.3,
+        "predicted_per_token_ms": 6.651,
+        "predicted_per_second": 150.4,
+        "draft_n": 171,
+        "draft_n_accepted": 139
+      }
+    },
+    {
+      "turn": 28,
+      "seconds": 1.1674349308013916,
+      "usage": {
+        "prompt_tokens": 49546,
+        "completion_tokens": 130,
+        "total_tokens": 49676,
+        "prompt_tokens_details": {
+          "cached_tokens": 49523
+        }
+      },
+      "timings": {
+        "cache_n": 49523,
+        "prompt_n": 23,
+        "prompt_ms": 227.5,
+        "prompt_per_token_ms": 9.891,
+        "prompt_per_second": 101.1,
+        "predicted_n": 130,
+        "predicted_ms": 722.0,
+        "predicted_per_token_ms": 5.554,
+        "predicted_per_second": 180.1,
+        "draft_n": 126,
+        "draft_n_accepted": 99
+      }
+    },
+    {
+      "turn": 29,
+      "seconds": 0.3817877769470215,
+      "usage": {
+        "prompt_tokens": 49699,
+        "completion_tokens": 15,
+        "total_tokens": 49714,
+        "prompt_tokens_details": {
+          "cached_tokens": 49676
+        }
+      },
+      "timings": {
+        "cache_n": 49676,
+        "prompt_n": 23,
+        "prompt_ms": 140.2,
+        "prompt_per_token_ms": 6.096,
+        "prompt_per_second": 164.1,
+        "predicted_n": 15,
+        "predicted_ms": 82.6,
+        "predicted_per_token_ms": 5.507,
+        "predicted_per_second": 181.6,
+        "draft_n": 13,
+        "draft_n_accepted": 11
+      }
+    },
+    {
+      "turn": 30,
+      "seconds": 1.6670191287994385,
+      "usage": {
+        "prompt_tokens": 49747,
+        "completion_tokens": 210,
+        "total_tokens": 49957,
+        "prompt_tokens_details": {
+          "cached_tokens": 49713
+        }
+      },
+      "timings": {
+        "cache_n": 49713,
+        "prompt_n": 34,
+        "prompt_ms": 215.6,
+        "prompt_per_token_ms": 6.341,
+        "prompt_per_second": 157.7,
+        "predicted_n": 210,
+        "predicted_ms": 1277.2,
+        "predicted_per_token_ms": 6.082,
+        "predicted_per_second": 164.4,
+        "draft_n": 194,
+        "draft_n_accepted": 157
+      }
+    },
+    {
+      "turn": 31,
+      "seconds": 1.3168988227844238,
+      "usage": {
+        "prompt_tokens": 49991,
+        "completion_tokens": 163,
+        "total_tokens": 50154,
+        "prompt_tokens_details": {
+          "cached_tokens": 49957
+        }
+      },
+      "timings": {
+        "cache_n": 49957,
+        "prompt_n": 34,
+        "prompt_ms": 197.1,
+        "prompt_per_token_ms": 5.797,
+        "prompt_per_second": 172.5,
+        "predicted_n": 163,
+        "predicted_ms": 954.4,
+        "predicted_per_token_ms": 5.855,
+        "predicted_per_second": 170.8,
+        "draft_n": 145,
+        "draft_n_accepted": 125
+      }
+    },
+    {
+      "turn": 32,
+      "seconds": 0.515110969543457,
+      "usage": {
+        "prompt_tokens": 50177,
+        "completion_tokens": 27,
+        "total_tokens": 50204,
+        "prompt_tokens_details": {
+          "cached_tokens": 50155
+        }
+      },
+      "timings": {
+        "cache_n": 50155,
+        "prompt_n": 22,
+        "prompt_ms": 142.2,
+        "prompt_per_token_ms": 6.464,
+        "prompt_per_second": 154.7,
+        "predicted_n": 27,
+        "predicted_ms": 163.9,
+        "predicted_per_token_ms": 6.07,
+        "predicted_per_second": 164.7,
+        "draft_n": 22,
+        "draft_n_accepted": 20
+      }
+    },
+    {
+      "turn": 33,
+      "seconds": 0.9365794658660889,
+      "usage": {
+        "prompt_tokens": 50388,
+        "completion_tokens": 26,
+        "total_tokens": 50414,
+        "prompt_tokens_details": {
+          "cached_tokens": 50203
+        }
+      },
+      "timings": {
+        "cache_n": 50203,
+        "prompt_n": 185,
+        "prompt_ms": 630.4,
+        "prompt_per_token_ms": 3.408,
+        "prompt_per_second": 293.5,
+        "predicted_n": 26,
+        "predicted_ms": 142.1,
+        "predicted_per_token_ms": 5.465,
+        "predicted_per_second": 183.0,
+        "draft_n": 22,
+        "draft_n_accepted": 19
+      }
+    },
+    {
+      "turn": 34,
+      "seconds": 2.046494722366333,
+      "usage": {
+        "prompt_tokens": 51860,
+        "completion_tokens": 144,
+        "total_tokens": 52004,
+        "prompt_tokens_details": {
+          "cached_tokens": 50413
+        }
+      },
+      "timings": {
+        "cache_n": 50413,
+        "prompt_n": 1447,
+        "prompt_ms": 1078.1,
+        "prompt_per_token_ms": 0.745,
+        "prompt_per_second": 1342.2,
+        "predicted_n": 144,
+        "predicted_ms": 752.9,
+        "predicted_per_token_ms": 5.228,
+        "predicted_per_second": 191.3,
+        "draft_n": 127,
+        "draft_n_accepted": 112
+      }
+    },
+    {
+      "turn": 35,
+      "seconds": 1.1032683849334717,
+      "usage": {
+        "prompt_tokens": 52027,
+        "completion_tokens": 132,
+        "total_tokens": 52159,
+        "prompt_tokens_details": {
+          "cached_tokens": 52006
+        }
+      },
+      "timings": {
+        "cache_n": 52006,
+        "prompt_n": 21,
+        "prompt_ms": 141.4,
+        "prompt_per_token_ms": 6.733,
+        "prompt_per_second": 148.5,
+        "predicted_n": 132,
+        "predicted_ms": 750.4,
+        "predicted_per_token_ms": 5.685,
+        "predicted_per_second": 175.9,
+        "draft_n": 121,
+        "draft_n_accepted": 101
+      }
+    },
+    {
+      "turn": 36,
+      "seconds": 0.5076804161071777,
+      "usage": {
+        "prompt_tokens": 52186,
+        "completion_tokens": 26,
+        "total_tokens": 52212,
+        "prompt_tokens_details": {
+          "cached_tokens": 52160
+        }
+      },
+      "timings": {
+        "cache_n": 52160,
+        "prompt_n": 26,
+        "prompt_ms": 190.3,
+        "prompt_per_token_ms": 7.319,
+        "prompt_per_second": 136.6,
+        "predicted_n": 26,
+        "predicted_ms": 148.0,
+        "predicted_per_token_ms": 5.692,
+        "predicted_per_second": 175.7,
+        "draft_n": 21,
+        "draft_n_accepted": 18
+      }
+    },
+    {
+      "turn": 37,
+      "seconds": 1.873476505279541,
+      "usage": {
+        "prompt_tokens": 53015,
+        "completion_tokens": 122,
+        "total_tokens": 53137,
+        "prompt_tokens_details": {
+          "cached_tokens": 52211
+        }
+      },
+      "timings": {
+        "cache_n": 52211,
+        "prompt_n": 804,
+        "prompt_ms": 1022.6,
+        "prompt_per_token_ms": 1.272,
+        "prompt_per_second": 786.2,
+        "predicted_n": 122,
+        "predicted_ms": 635.5,
+        "predicted_per_token_ms": 5.209,
+        "predicted_per_second": 192.0,
+        "draft_n": 93,
+        "draft_n_accepted": 92
+      }
+    },
+    {
+      "turn": 38,
+      "seconds": 2.8313355445861816,
+      "usage": {
+        "prompt_tokens": 53160,
+        "completion_tokens": 371,
+        "total_tokens": 53531,
+        "prompt_tokens_details": {
+          "cached_tokens": 53137
+        }
+      },
+      "timings": {
+        "cache_n": 53137,
+        "prompt_n": 23,
+        "prompt_ms": 139.0,
+        "prompt_per_token_ms": 6.043,
+        "prompt_per_second": 165.5,
+        "predicted_n": 371,
+        "predicted_ms": 2470.5,
+        "predicted_per_token_ms": 6.659,
+        "predicted_per_second": 150.2,
+        "draft_n": 321,
+        "draft_n_accepted": 270
+      }
+    },
+    {
+      "turn": 39,
+      "seconds": 1.2307286262512207,
+      "usage": {
+        "prompt_tokens": 53554,
+        "completion_tokens": 169,
+        "total_tokens": 53723,
+        "prompt_tokens_details": {
+          "cached_tokens": 53531
+        }
+      },
+      "timings": {
+        "cache_n": 53531,
+        "prompt_n": 23,
+        "prompt_ms": 142.0,
+        "prompt_per_token_ms": 6.174,
+        "prompt_per_second": 162.0,
+        "predicted_n": 169,
+        "predicted_ms": 859.2,
+        "predicted_per_token_ms": 5.084,
+        "predicted_per_second": 196.7,
+        "draft_n": 144,
+        "draft_n_accepted": 133
+      }
+    },
+    {
+      "turn": 40,
+      "seconds": 1.3451886177062988,
+      "usage": {
+        "prompt_tokens": 53746,
+        "completion_tokens": 175,
+        "total_tokens": 53921,
+        "prompt_tokens_details": {
+          "cached_tokens": 53725
+        }
+      },
+      "timings": {
+        "cache_n": 53725,
+        "prompt_n": 21,
+        "prompt_ms": 133.8,
+        "prompt_per_token_ms": 6.371,
+        "prompt_per_second": 157.0,
+        "predicted_n": 175,
+        "predicted_ms": 1026.2,
+        "predicted_per_token_ms": 5.864,
+        "predicted_per_second": 170.5,
+        "draft_n": 159,
+        "draft_n_accepted": 132
+      }
+    },
+    {
+      "turn": 41,
+      "seconds": 0.9866845607757568,
+      "usage": {
+        "prompt_tokens": 53944,
+        "completion_tokens": 130,
+        "total_tokens": 54074,
+        "prompt_tokens_details": {
+          "cached_tokens": 53923
+        }
+      },
+      "timings": {
+        "cache_n": 53923,
+        "prompt_n": 21,
+        "prompt_ms": 133.6,
+        "prompt_per_token_ms": 6.362,
+        "prompt_per_second": 157.2,
+        "predicted_n": 130,
+        "predicted_ms": 668.4,
+        "predicted_per_token_ms": 5.142,
+        "predicted_per_second": 194.5,
+        "draft_n": 117,
+        "draft_n_accepted": 106
+      }
+    },
+    {
+      "turn": 42,
+      "seconds": 0.38442087173461914,
+      "usage": {
+        "prompt_tokens": 54097,
+        "completion_tokens": 15,
+        "total_tokens": 54112,
+        "prompt_tokens_details": {
+          "cached_tokens": 54078
+        }
+      },
+      "timings": {
+        "cache_n": 54078,
+        "prompt_n": 19,
+        "prompt_ms": 124.8,
+        "prompt_per_token_ms": 6.568,
+        "prompt_per_second": 152.2,
+        "predicted_n": 15,
+        "predicted_ms": 87.3,
+        "predicted_per_token_ms": 5.82,
+        "predicted_per_second": 171.8,
+        "draft_n": 13,
+        "draft_n_accepted": 11
+      }
+    },
+    {
+      "turn": 43,
+      "seconds": 0.5595104694366455,
+      "usage": {
+        "prompt_tokens": 54145,
+        "completion_tokens": 27,
+        "total_tokens": 54172,
+        "prompt_tokens_details": {
+          "cached_tokens": 54111
+        }
+      },
+      "timings": {
+        "cache_n": 54111,
+        "prompt_n": 34,
+        "prompt_ms": 203.9,
+        "prompt_per_token_ms": 5.997,
+        "prompt_per_second": 166.7,
+        "predicted_n": 27,
+        "predicted_ms": 167.5,
+        "predicted_per_token_ms": 6.204,
+        "predicted_per_second": 161.2,
+        "draft_n": 24,
+        "draft_n_accepted": 22
+      }
+    },
+    {
+      "turn": 44,
+      "seconds": 1.4552969932556152,
+      "usage": {
+        "prompt_tokens": 54342,
+        "completion_tokens": 115,
+        "total_tokens": 54457,
+        "prompt_tokens_details": {
+          "cached_tokens": 54173
+        }
+      },
+      "timings": {
+        "cache_n": 54173,
+        "prompt_n": 169,
+        "prompt_ms": 608.5,
+        "prompt_per_token_ms": 3.601,
+        "prompt_per_second": 277.7,
+        "predicted_n": 115,
+        "predicted_ms": 668.7,
+        "predicted_per_token_ms": 5.815,
+        "predicted_per_second": 172.0,
+        "draft_n": 103,
+        "draft_n_accepted": 86
+      }
+    },
+    {
+      "turn": 45,
+      "seconds": 0.512366533279419,
+      "usage": {
+        "prompt_tokens": 54480,
+        "completion_tokens": 27,
+        "total_tokens": 54507,
+        "prompt_tokens_details": {
+          "cached_tokens": 54456
+        }
+      },
+      "timings": {
+        "cache_n": 54456,
+        "prompt_n": 24,
+        "prompt_ms": 140.3,
+        "prompt_per_token_ms": 5.846,
+        "prompt_per_second": 171.1,
+        "predicted_n": 27,
+        "predicted_ms": 156.0,
+        "predicted_per_token_ms": 5.778,
+        "predicted_per_second": 173.1,
+        "draft_n": 26,
+        "draft_n_accepted": 24
+      }
+    },
+    {
+      "turn": 46,
+      "seconds": 0.9302353858947754,
+      "usage": {
+        "prompt_tokens": 54668,
+        "completion_tokens": 26,
+        "total_tokens": 54694,
+        "prompt_tokens_details": {
+          "cached_tokens": 54510
+        }
+      },
+      "timings": {
+        "cache_n": 54510,
+        "prompt_n": 158,
+        "prompt_ms": 609.8,
+        "prompt_per_token_ms": 3.859,
+        "prompt_per_second": 259.1,
+        "predicted_n": 26,
+        "predicted_ms": 141.9,
+        "predicted_per_token_ms": 5.458,
+        "predicted_per_second": 183.2,
+        "draft_n": 22,
+        "draft_n_accepted": 20
+      }
+    }
+  ],
+  "last_message": {
+    "role": "tool",
+    "tool_call_id": "call_e283b794e5544fa5a5a00f7d",
+    "content": "{\"content\": \"/* Hill Rider — original 2D side-view hill climbing game.\\n   Plain JS + Canvas. Physics: two wheel contact points, spring suspension,\\n   air rotation, hard clamp so the car can never fall through terrain.\\n*/\\n(function () {\\n'use strict';\\n\\n/* ---------------- setup ---------------- */\\nvar canvas = document.getElementById('game');\\nvar ctx = canvas.getContext('2d');\\nvar W = 0, H = 0, DPR = 1;\\n\\nfunction resize() {\\n  DPR = Math.min(window.devicePixelRatio || 1, 2);\\n  W = window.innerWidth; H = window.innerHeight;\\n  canvas.width = Math.floor(W * DPR); canvas.height = Math.floor(H * DPR);\\n  canvas.style.width = W + 'px'; canvas.style.height = H + 'px';\\n  ctx.setTransform(DPR, 0, 0, DPR, 0, 0);\\n}\\nwindow.addEventListener('resize', resize); resize();\\n\\nvar el = {\\n  dist: document.getElementById('dist'),\\n  best: document.getElementById('best'),\\n  coins: document.getElementById('coins'),\\n  fuelbar: document.getElementById('fuelbar'),\\n  fueltext: document.getElementById('fueltext'),\\n  statename: document.getElementById('statename'),\\n  debug: document.getElementById('debug'),\\n  overlay: document.getElementById('overlay'),\\n  title: document.getElementById('title'),\\n  msg: document.getElementById('msg'),\\n  mainbtn: document.getElementById('mainbtn'),\\n  garage: document.getElementById('garage'),\\n  upgrades: document.getElementById('upgrades'),\\n  garageclose: document.getElementById('garageclose'),\\n  gmsg: document.getElementById('gmsg'),\\n  soundbtn: document.getElementById('soundbtn'),\\n  garagebtn: document.getElementById('garagebtn'),\\n  gasPedal: document.getElementById('gasPedal'),\\n  brakePedal: document.getElementById('brakePedal'),\\n  hint: document.getElementById('hint')\\n};\\n\\nfunction clamp(v, a, b) {\\n  if (!isFinite(v)) return 0;\\n  return v < a ? a : (v > b ? b : v);\\n}\\n\\n/* ---------------- storage ---------------- */\\nvar KEY = 'hillrider.save.v1';\\nvar save = { best: 0, coins: 0, sound: true, upgrades: { engine: 0, suspension: 0, tank: 0 } };\\nfunction loadSave() {\\n  try {\\n    var raw = window.localStorage ? window.localStorage.getItem(KEY) : null;\\n    if (raw) {\\n      var s = JSON.parse(raw);\\n      if (s && typeof s === 'object') {\\n        save.best = +s.best || 0;\\n        save.coins = +s.coins || 0;\\n        save.sound = s.sound !== false;\\n        if (s.upgrades) {\\n          save.upgrades.engine = clamp(+s.upgrades.engine || 0, 0, 5);\\n          save.upgrades.suspension = clamp(+s.upgrades.suspension || 0, 0, 5);\\n          save.upgrades.tank = clamp(+s.upgrades.tank || 0, 0, 5);\\n        }\\n      }\\n    }\\n  } catch (e) { /* ignore */ }\\n}\\nfunction persist() {\\n  try { if (window.localStorage) window.localStorage.setItem(KEY, JSON.stringify(save)); } catch (e) { /* ignore */ }\\n}\\nloadSave();\\n\\n/* ---------------- terrain ---------------- */\\nfunction hash(n) {\\n  var x = Math.sin(n * 127.1 + 311.7) * 43758.5453;\\n  return x - Math.floor(x);\\n}\\nfunction vnoise(x) {\\n  var i = Math.floor(x), f = x - i;\\n  var t = f * f * (3 - 2 * f);\\n  return hash(i) * (1 - t) + hash(i + 1) * t;\\n}\\nfunction difficulty(x) { return clamp(x / 1400, 0, 1); }\\n\\nfunction groundY(x) {\\n  var d = difficulty(x);\\n  var base = 320;\\n  var y = base;\\n  y += 90 * vnoise(x / 140);            // long rolling hills\\n  y += 40 * vnoise(x / 47 + 13.5);      // medium bumps\\n  y += 14 * vnoise(x / 17 + 71.2) * (0.4 + d);\\n  if (x > 260) {\\n    var period = 320 - 120 * d;\\n    var seg = (x % period) / period;\\n    if (seg < 0.35) {\\n      var s = seg / 0.35;\\n      y -= 70 * d * s * s;              // ramp up\\n    } else if (seg > 0.62) {\\n      var s2 = (seg - 0.62) / 0.38;\\n      y += 40 * d * Math.sin(s2 * Math.PI);\\n    }\\n  }\\n  if (x < 60) y = base;                 // flat safe start\\n  return y;\\n}\\nfunction groundSlope(x) {\\n  var e = 0.75;\\n  return (groundY(x + e) - groundY(x - e)) / (2 * e);\\n}\\nfunction groundNormal(x) {\\n  var s = groundSlope(x);\\n  var len = Math.sqrt(1 + s * s);\\n  return { x: -s / len, y: -1 / len };   // unit normal, pointing up (negative y)\\n}\\n\\nvar WORLD_BOTTOM = 1400;\\n\\n/* ---------------- car ---------------- */\\nvar car = {};\\nfunction carStats() {\\n  var u = save.upgrades;\\n  return {\\n    torque: 900 + 160 * u.engine,\\n    maxSpeed: 26 + 3 * u.engine,\\n    springK: 1600 + 260 * u.suspension,\\n    damping: 190 + 30 * u.suspension,\\n    tank: 100 + 25 * u.tank,\\n    restLen: 26 - 2 * u.suspension\\n  };\\n}\\nfunction resetCar() {\\n  var st = carStats();\\n  car = {\\n    x: 120, y: groundY(120) - st.restLen - 14,\\n    vx: 0, vy: 0, angle: 0, omega: 0,\\n    mass: 120, inertia: 1600,\\n    wheelBase: 62, wheelR: 16,\\n    contact: 0, fuel: st.tank, overturned: 0,\\n    wheelSpin: 0, airTime: 0, prevContact: 0\\n  };\\n}\\n\\n/* ---------------- state ---------------- */\\nvar state = 'drive';   // ready | drive | paused | over | garage\\nvar runCoins = 0;\\nvar camX = 0, camY = 0;\\nvar input = { gas: false, brake: false };\\nvar coins = [];\\nvar particles = [];\\nvar lastDebug = '';\\n\\nfunction spawnCoins() {\\n  coins = [];\\n  for (var x = 180; x < 4200; x += 90) {\\n    if (hash(x / 90 + 3.3) > 0.55) {\\n      var lift = 26 + 34 * hash(x / 90 + 9.1);\\n      coins.push({ x: x, y: groundY(x) - lift, taken: false, spin: hash(x) * 6.28 });\\n    }\\n  }\\n}\\n\\nfunction restart() {\\n  resetCar(); spawnCoins(); runCoins = 0; particles = [];\\n  camX = car.x + 140; camY = car.y - 40;\\n  state = 'drive'; hideOverlay();\\n}\\n\\n/* ---------------- sound ---------------- */\\nvar actx = null, engineOsc = null, engineGain = null, masterGain = null;\\nfunction initAudio() {\\n  if (actx) return;\\n  try {\\n    var AC = window.AudioContext || window.webkitAudioContext;\\n    if (!AC) return;\\n    actx = new AC();\\n    masterGain = actx.createGain(); masterGain.gain.value = save.sound ? 0.35 : 0.0;\\n    masterGain.connect(actx.destination);\\n    engineOsc = actx.createOscillator();\\n    engineOsc.type = 'sawtooth';\\n    engineGain = actx.createGain(); engineGain.gain.value = 0.05;\\n    var lp = actx.createBiquadFilter(); lp.type = 'lowpass'; lp.frequency.value = 700;\\n    engineOsc.connect(engineGain); engineGain.connect(lp); lp.connect(masterGain);\\n    engineOsc.frequency.value = 60;\\n    engineOsc.start();\\n  } catch (e) { actx = null; }\\n}\\nfunction blip(freq, dur, vol, type) {\\n  if (!actx || !save.sound) return;\\n  try {\\n    var o = actx.createOscillator(), g = actx.createGain();\\n    o.type = type || 'triangle'; o.frequency.value = freq;\\n    g.gain.value = vol;\\n    g.connect(masterGain); o.connect(g);\\n    var t = actx.currentTime;\\n    g.gain.setValueAtTime(vol, t);\\n    g.gain.exponentialRampToValueAtTime(0.0001, t + dur);\\n    o.start(t); o.stop(t + dur + 0.02);\\n  } catch (e) { /* ignore */ }\\n}\\nfunction thud(v) {\\n  if (!actx || !save.sound) return;\\n  blip(90 + 60 * clamp(v, 0, 1), 0.18, clamp(0.12 + v * 0.2, 0.05, 0.35), 'square');\\n}\\n\\n/* ---------------- physics ---------------- */\\nvar G = 900;\\n\\nfunction physics(dt) {\\n  var st = carStats();\\n  var k = st.springK, damp = st.damping, restLen = st.restLen;\\n  var sa = Math.sin(car.angle), ca = Math.cos(car.angle);\\n  var upx = -sa, upy = -ca;   // body-up direction in screen coords (up = -y)\\n\\n  /* suspension / ground contact */\\n  var totalUp = 0, totalTorque = 0, contactSum = 0;\\n  for (var i = 0; i < 2; i++) {\\n    var off = (i === 0 ? -car.wheelBase / 2 : car.wheelBase / 2);\\n    var wx = car.x + off * ca;\\n    var wy = car.y + off * sa;\\n    var gy = groundY(wx);\\n    var travel = clamp(gy - (wy + car.wheelR), 0, restLen + 8);\\n    var f = 0;\\n    if (travel > 0) {\\n      // spring force acts along the body-up axis; its moment arm about the chassis\\n      // centre is the perpendicular distance from the wheel to the body line.\\n      var px = wx - car.x, py = wy - car.y;\\n      var arm = px * upy - py * upx;           // cross(up, wheelOffset)\\n      var wheelVelUp = car.vy * upy + car.vx * upx + car.omega * arm;\\n      f = k * travel - damp * wheelVelUp;\\n      if (f < 0) f = 0;\\n      contactSum += 1;\\n    }\\n    totalUp += f;\\n    totalTorque += f * arm;\\n  }\\n  car.contact = contactSum;\\n\\n  // gravity + spring response\\n  car.vy += G * dt;\\n  car.vy -= (totalUp / car.mass) * dt;\\n  // gentle extra alignment torque so the chassis follows the slope\\n  if (contactSum > 0) car.omega += (totalTorque / car.inertia) * dt + 2.5 * dt;\\n  else car.omega += (totalTorque / car.inertia) * dt;\\n\\n  // throttle / brake along slope tangent\\n  var driveForce = 0, brakeForce = 0;\\n  if (input.gas && contactSum > 0 && car.fuel > 0) driveForce = st.torque;\\n  if (input.brake && contactSum > 0) {\\n    brakeForce = -Math.sign(car.vx) * 700;\\n    if (Math.abs(car.vx) < 6) brakeForce = 0;\\n  }\\n\\n  // fuel\\n  if (input.gas && contactSum > 0 && car.fuel > 0) {\\n    car.fuel -= dt * (0.9 + 0.25 * Math.abs(car.vx) / st.maxSpeed) * 1.4;\\n  } else {\\n    car.fuel -= dt * 0.18;\\n  }\\n  if (car.fuel <= 0) { car.fuel = 0; endRun('Out of fuel'); }\\n\\n  if (contactSum > 0) {\\n    var n = groundNormal(car.x);\\n    var tx = -n.y, ty = n.x;\\n    var ff = driveForce + brakeForce;\\n    car.vx += (ff * tx / car.mass) * dt;\\n    car.vy += (ff * ty / car.mass) * dt;\\n    // keep wheels hugging the slope on steep hills\\n    var normalVel = car.vx * n.x + car.vy * n.y;\\n    if (normalVel > 0) {\\n      var corr = Math.min(normalVel, 220) * 3.5 * dt;\\n      car.vx -= n.x * corr; car.vy -= n.y * corr;\\n    }\\n    car.vx -= car.vx * 0.25 * dt;\\n    car.omega -= car.omega * 3.2 * dt;\\n    car.airTime = 0;\\n  } else {\\n    car.omega -= car.omega * 0.15 * dt;\\n    car.airTime += dt;\\n    if (input.gas) car.omega += 1.6 * dt;\\n    if (input.brake) car.omega -= 1.6 * dt;\\n  }\\n\\n  // integrate\\n  car.x += car.vx * dt;\\n  car.y += car.vy * dt;\\n\\n  // hard clamp: wheels can never sink below terrain\\n  for (var j = 0; j < 2; j++) {\\n    var off2 = (j === 0 ? -car.wheelBase / 2 : car.wheelBase / 2);\\n    var wx2 = car.x + off2 * ca;\\n    var wy2 = car.y + off2 * sa;\\n    var gy2 = groundY(wx2);\\n    if (wy2 + car.wheelR > gy2) {\\n      var push = (wy2 + car.wheelR) - gy2;\\n      car.y -= push;\\n      if (car.vy > 0) {\\n        if (car.vy > 220) thud(clamp(car.vy / 700, 0, 1));\\n        car.vy = -car.vy * 0.15;\\n      }\\n    }\\n  }\\n  if (car.y > groundY(car.x) - 8) { car.y = groundY(car.x) - 8; if (car.vy > 0) car.vy = 0; }\\n\\n  // landing thud\\n  if (contactSum > 0 && car.prevContact === 0 && car.airTime > 0.3) {\\n    thud(clamp(Math.abs(car.vy) / 600, 0.15, 1));\\n  }\\n  car.prevContact = contactSum;\\n\\n  // caps\\n  car.vx = clamp(car.vx, -12, st.maxSpeed);\\n  car.vy = clamp(car.vy, -800, 800);\\n  car.omega = clamp(car.omega, -6, 6);\\n  car.wheelSpin += (car.vx / car.wheelR) * dt;\\n\\n  // overturned\\n  var cosA = Math.cos(car.angle);\\n  if (car.contact > 0 && cosA < -0.2) car.overturned += dt;\\n  else car.overturned = Math.max(0, car.overturned - dt * 0.5);\\n  if (car.overturned > 2.2) endRun('Car is upside down');\\n  if (car.y > WORLD_BOTTOM) endRun('Fell off the world');\\n\\n  // coins\\n  for (var c = 0; c < coins.length; c++) {\\n    var co = coins[c];\\n    if (co.taken) continue;\\n    var dx = co.x - car.x, dy = co.y - car.y;\\n    if (dx * dx + dy * dy < 46 * 46) {\\n      co.taken = true; runCoins++;\\n      blip(880, 0.12, 0.16); blip(1320, 0.16, 0.12);\\n      for (var p = 0; p < 8; p++) {\\n        particles.push({ x: co.x, y: co.y, vx: (hash(p + co.spin) - 0.5) * 160, vy: -hash(p * 3 + co.spin) * 180, life: 0.6, c: '#ffd27a' });\\n      }\\n    }\\n  }\\n\\n  // particles\\n  for (var q = particles.length - 1; q >= 0; q--) {\\n    var pa = particles[q];\\n    pa.life -= dt; if (pa.life <= 0) { particles.splice(q, 1); continue; }\\n    pa.x += pa.vx * dt; pa.y += pa.vy * dt; pa.vy += 300 * dt;\\n  }\\n  if (car.contact > 0 && input.gas && car.fuel > 0 && hash(Math.floor(car.x)) > 0.6) {\\n    particles.push({ x: car.x - 34 * Math.cos(car.angle), y: car.y - 10, vx: -60, vy: -40, life: 0.5, c: '#c8d2dd' });\\n  }\\n\\n  // distance / best\\n  var dist = Math.max(0, Math.floor(car.x - 120));\\n  if (dist > save.best) { save.best = dist; persist(); }\\n\\n  // camera\\n  camX += (car.x + 140 - camX) * Math.min(1, dt * 3.5);\\n  camY += (car.y - 40 - camY) * Math.min(1, dt * 3.5);\\n  camY = Math.min(camY, 220);\\n}\\n\\nfunction endRun(reason) {\\n  if (state === 'over') return;\\n  state = 'over';\\n  save.coins += runCoins; runCoins = 0;\\n  persist();\\n  showOverlay('Game over', reason + ' — run: ' + Math.max(0, Math.floor(car.x - 120)) + ' m, coins: ' + runCoins, 'Restart (R)');\\n  blip(220, 0.4, 0.2, 'sawtooth');\\n}\\n\\n/* ---------------- UI ---------------- */\\nfunction showOverlay(t, m, btn) {\\n  el.title.textContent = t; el.msg.textContent = m; el.mainbtn.textContent = btn;\\n  el.overlay.classList.remove('hidden');\\n}\\nfunction hideOverlay() { el.overlay.classList.add('hidden'); }\\n\\nel.mainbtn.addEventListener('click', function () {\\n  initAudio();\\n  if (state === 'over') { save.coins += runCoins; persist(); restart(); }\\n  else if (state === 'ready' || state === 'paused') { state = 'drive'; hideOverlay(); }\\n});\\nel.garageclose.addEventListener('click', function () {\\n  el.garage.classList.add('hidden');\\n  if (state === 'garage') state = 'drive';\\n});\\nfunction updateSoundBtn() { el.soundbtn.textContent = 'SOUND: ' + (save.sound ? 'ON' : 'OFF'); }\\nel.soundbtn.addEventListener('click', function () {\\n  save.sound = !save.sound; persist(); updateSoundBtn();\\n  if (save.sound) { initAudio(); if (masterGain) masterGain.gain.value = 0.35; blip(660, 0.1, 0.15); }\\n  else if (masterGain) masterGain.gain.value = 0;\\n});\\nupdateSoundBtn();\\n\\nvar UPG = [\\n  { key: 'engine', name: 'Engine', cost: function (lv) { return 15 + lv * 12; } },\\n  { key: 'suspension', name: 'Suspension', cost: function (lv) { return 12 + lv * 10; } },\\n  { key: 'tank', name: 'Fuel tank', cost: function (lv) { return 10 + lv * 9; } }\\n];\\nfunction renderGarage() {\\n  el.upgrades.innerHTML = '';\\n  el.gmsg.textContent = 'Coins banked: ' + save.coins + '. Upgrades saved locally. Best: ' + save.best + ' m.';\\n  UPG.forEach(function (u) {\\n    var lv = save.upgrades[u.key];\\n    var b = document.createElement('button');\\n    b.type = 'button'; b.className = 'upg';\\n    b.innerHTML = u.name + ' lv ' + lv + (lv >= 5 ? ' (max)' : '<span>' + u.cost(lv) + ' coins</span>');\\n    b.setAttribute('data-upgrade', u.key);\\n    b.disabled = lv >= 5 || save.coins < u.cost(lv);\\n    b.addEventListener('click', function () {\\n      if (lv >= 5 || save.coins < u.cost(lv)) return;\\n      save.coins -= u.cost(lv); save.upgrades[u.key]++; persist();\\n      blip(700, 0.15, 0.18); renderGarage();\\n    });\\n    el.upgrades.appendChild(b);\\n  });\\n}\\nel.garagebtn.addEventListener('click', function () {\\n  state = 'garage';\\n  el.garage.classList.remove('hidden');\\n  renderGarage();\\n});\\n\\nwindow.addEventListener('keydown', function (e) {\\n  var k = (e.key || '').toLowerCase();\\n  if (k === 'arrowright' || k === 'd') { input.gas = true; el.gasPedal.classList.add('active'); e.preventDefault(); }\\n  if (k === 'arrowleft' || k === 'a') { input.brake = true; el.brakePedal.classList.add('active'); e.preventDefault(); }\\n  if (k === 'p') togglePause();\\n  if (k === 'r') { initAudio(); restart(); }\\n  if (k === 'm') el.soundbtn.click();\\n  if (k === 'g') el.garagebtn.click();\\n});\\nwindow.addEventListener('keyup', function (e) {\\n  var k = (e.key || '').toLowerCase();\\n  if (k === 'arrowright' || k === 'd') { input.gas = false; el.gasPedal.classList.remove('active'); }\\n  if (k === 'arrowleft' || k === 'a') { input.brake = false; el.brakePedal.classList.remove('active'); }\\n});\\nfunction bindPedal(btn, flag) {\\n  function on(e) { e.preventDefault(); input[flag] = true; btn.classList.add('active'); initAudio(); }\\n  function off() { input[flag] = false; btn.classList.remove('active'); }\\n  btn.addEventListener('pointerdown', on);\\n  btn.addEventListener('pointerup', off);\\n  btn.addEventListener('pointerleave', off);\\n  btn.addEventListener('pointercancel', off);\\n}\\nbindPedal(el.gasPedal, 'gas');\\nbindPedal(el.brakePedal, 'brake');\\nwindow.addEventListener('pointerdown', function () { initAudio(); }, { once: true });\\n\\nfunction togglePause() {\\n  if (state === 'drive') {\\n    state = 'paused';\\n    save.coins += runCoins; runCoins = 0; persist();\\n    showOverlay('Paused', 'press P to continue, R to restart', 'Continue');\\n  } else if (state === 'paused') { state = 'drive'; hideOverlay(); }\\n}\\n\\n/* ---------------- drawing ---------------- */\\nfunction worldToScreen(wx, wy) { return { x: wx - camX + W / 2, y: wy - camY + H / 2 }; }\\n\\nfunction drawSky() {\\n  var g = ctx.createLinearGradient(0, 0, 0, H);\\n  g.addColorStop(0, '#24344f');\\n  g.addColorStop(0.55, '#3b5876');\\n  g.addColorStop(1, '#6f8b9a');\\n  ctx.fillStyle = g; ctx.fillRect(0, 0, W, H);\\n\\n  var sx = W * 0.8, sy = H * 0.18;\\n  ctx.fillStyle = 'rgba(255,225,160,.75)';\\n  ctx.beginPath(); ctx.arc(sx, sy, 34, 0, 6.283); ctx.fill();\\n  ctx.fillStyle = 'rgba(255,225,160,.14)';\\n  ctx.beginPath(); ctx.arc(sx, sy, 70, 0, 6.283); ctx.fill();\\n\\n  drawParallax(0.25, '#2f4660', 0.55, 120);\\n  drawParallax(0.5, '#35516a', 0.75, 90);\\n\\n  for (var i = 0; i < 5; i++) {\\n    var cx = ((i * 371 - camX * 0.18) % (W + 260) + W + 260) % (W + 260) - 130;\\n    var cy = 60 + i * 34 + 40 * hash(i * 7.7);\\n    ctx.fillStyle = 'rgba(240,246,252,.13)';\\n    puff(cx, cy, 46 + 18 * hash(i + 2.1));\\n  }\\n}\\nfunction puff(x, y, r) {\\n  ctx.beginPath();\\n  ctx.arc(x, y, r, 0, 6.283);\\n  ctx.arc(x + r * 0.8, y + 6, r * 0.7, 0, 6.283);\\n  ctx.arc(x - r * 0.8, y + 8, r * 0.6, 0, 6.283);\\n  ctx.fill();\\n}\\nfunction drawParallax(par, color, yBase, amp) {\\n  ctx.fillStyle = color;\\n  ctx.beginPath();\\n  var ox = -camX * par;\\n  ctx.moveTo(0, H);\\n  for (var px = 0; px <= W; px += 16) {\\n    var wx = px - W * 0.5;\\n    var t = (wx + ox) / 300;\\n    var y = H * yBase - amp * (0.5 + 0.5 * Math.sin(t * 1.7) + 0.35 * vnoise((wx + ox) / 220 + 5.5));\\n    ctx.lineTo(px, y);\\n  }\\n  ctx.lineTo(W, H); ctx.closePath(); ctx.fill();\\n}\\n\\nfunction drawTerrain() {\\n  var start = camX - W / 2 - 40, end = camX + W / 2 + 40;\\n  var first = worldToScreen(start, groundY(start));\\n  ctx.beginPath();\\n  ctx.moveTo(first.x, first.y);\\n  for (var x = start; x <= end; x += 8) {\\n    var p = worldToScreen(x, groundY(x));\\n    ctx.lineTo(p.x, p.y);\\n  }\\n  var lastP = worldToScreen(end, groundY(end));\\n  ctx.lineTo(lastP.x, H + 200); ctx.lineTo(first.x, H + 200); ctx.closePath();\\n  var g = ctx.createLinearGradient(0, 0, 0, H);\\n  g.addColorStop(0, '#4a7c46');\\n  g.addColorStop(1, '#2c4a32');\\n  ctx.fillStyle = g; ctx.fill();\\n\\n  ctx.strokeStyle = '#69b05f'; ctx.lineWidth = 4;\\n  ctx.beginPath();\\n  for (var x2 = start; x2 <= end; x2 += 8) {\\n    var p2 = worldToScreen(x2, groundY(x2));\\n    if (x2 === start) ctx.moveTo(p2.x, p2.y); else ctx.lineTo(p2.x, p2.y);\\n  }\\n  ctx.stroke();\\n\\n  for (var tx = Math.floor(start / 120) * 120; tx < end; tx += 120) {\\n    if (tx < 200) continue;\\n    var h = hash(tx / 120 + 1.7);\\n    if (h < 0.5) continue;\\n    var sp = worldToScreen(tx, groundY(tx));\\n    drawTree(sp.x, sp.y, 26 + 26 * h, h);\\n  }\\n\\n  ctx.fillStyle = 'rgba(255,255,255,.35)';\\n  ctx.font = '11px monospace';\\n  for (var m = Math.ceil(start / 100) * 100; m < end; m += 100) {\\n    if (m < 100) continue;\\n    var mp = worldToScreen(m, groundY(m));\\n    if (mp.y > H + 20) continue;\\n    ctx.fillRect(mp.x - 1, mp.y - 34, 2, 30);\\n    ctx.fillText((m - 120) + 'm', mp.x + 4, mp.y - 24);\\n  }\\n}\\nfunction drawTree(x, y, size, h) {\\n  ctx.strokeStyle = '#6b5335'; ctx.lineWidth = 3;\\n  ctx.beginPath(); ctx.moveTo(x, y); ctx.lineTo(x, y - size); ctx.stroke();\\n  ctx.fillStyle = h > 0.75 ? '#3d7a44' : '#458751';\\n  ctx.beginPath(); ctx.arc(x, y - size - size * 0.45, size * 0.55, 0, 6.283); ctx.fill();\\n  ctx.fillStyle = 'rgba(255,255,255,.08)';\\n  ctx.beginPath(); ctx.arc(x - size * 0.18, y - size - size * 0.55, size * 0.28, 0, 6.283); ctx.fill();\\n}\\n\\nfunction drawCoins() {\\n  for (var i = 0; i < coins.length; i++) {\\n    var c = coins[i];\\n    if (c.taken) continue;\\n    var p = worldToScreen(c.x, c.y);\\n    if (p.x < -40 || p.x > W + 40) continue;\\n    var wob = Math.sin(c.spin + performance.now() / 300) * 3;\\n    ctx.save();\\n    ctx.translate(p.x, p.y + wob);\\n    ctx.fillStyle = '#ffd27a';\\n    ctx.beginPath(); ctx.ellipse(0, 0, 10, 12, 0, 0, 6.283); ctx.fill();\\n    ctx.fillStyle = '#e8a93f';\\n    ctx.beginPath(); ctx.ellipse(0, 0, 6.5, 8, 0, 0, 6.283); ctx.fill();\\n    ctx.restore();\\n  }\\n}\\n\\nfunction drawParticles() {\\n  for (var i = 0; i < particles.length; i++) {\\n    var p = particles[i];\\n    var s = worldToScreen(p.x, p.y);\\n    ctx.globalAlpha = clamp(p.life / 0.6, 0, 1);\\n    ctx.fillStyle = p.c;\\n    ctx.beginPath(); ctx.arc(s.x, s.y, 3.5, 0, 6.283); ctx.fill();\\n  }\\n  ctx.globalAlpha = 1;\\n}\\n\\nfunction drawCar() {\\n  var s = worldToScreen(car.x, car.y);\\n  var sa = Math.sin(car.angle), ca = Math.cos(car.angle);\\n  var st = carStats();\\n\\n  ctx.save();\\n  ctx.translate(s.x, s.y);\\n\\n  // ground shadow (world aligned)\\n  var gy = groundY(car.x);\\n  ctx.fillStyle = 'rgba(0,0,0,.22)';\\n  ctx.beginPath(); ctx.ellipse(0, gy - car.y, 46, 8, 0, 0, 6.283); ctx.fill();\\n\\n  ctx.rotate(car.angle);\\n\\n  // suspension struts + springs, drawn per wheel using real travel\\n  for (var i = 0; i < 2; i++) {\\n    var off = (i === 0 ? -car.wheelBase / 2 : car.wheelBase / 2);\\n    var travel = clamp(groundY(car.x + off * ca) - (car.y + off * sa + car.wheelR), 0, st.restLen + 8);\\n    var len = st.restLen + 8 - travel;          // current strut length\\n    ctx.strokeStyle = '#8d99a8'; ctx.lineWidth = 3;\\n    ctx.beginPath(); ctx.moveTo(off, -2); ctx.lineTo(off, len - 2); ctx.stroke();\\n    ctx.strokeStyle = '#a9b6c4'; ctx.lineWidth = 2;\\n    for (var w = 0; w < 4; w++) {\\n      var yy = 1 + w * (len - 4) / 4;\\n      ctx.beginPath(); ctx.moveTo(off - 4, yy); ctx.lineTo(off + 4, yy + 2); ctx.stroke();\\n    }\\n  }\\n\\n  // body\\n  ctx.fillStyle = '#e0553f';\\n  ctx.strokeStyle = '#8f3225'; ctx.lineWidth = 2;\\n  ctx.beginPath();\\n  ctx.moveTo(-34, -4); ctx.lineTo(-30, -18); ctx.lineTo(-10, -20);\\n  ctx.lineTo(6, -26); ctx.lineTo(22, -26); ctx.lineTo(30, -12);\\n  ctx.lineTo(34, -4); ctx.lineTo(26, 2); ctx.lineTo(-26, 2);\\n  ctx.closePath(); ctx.fill(); ctx.stroke();\\n\\n  ctx.fillStyle = 'rgba(180,220,240,.85)';\\n  ctx.beginPath();\\n  ctx.moveTo(-8, -19); ctx.lineTo(4, -24); ctx.lineTo(18, -24); ctx.lineTo(18, -12); ctx.lineTo(-8, -12);\\n  ctx.closePath(); ctx.fill();\\n\\n  ctx.fillStyle = '#f2c9a0';\\n  ctx.beginPath(); ctx.arc(6, -17, 5.5, 0, 6.283); ctx.fill();\\n  ctx.fillStyle = '#2c3e50';\\n  ctx.beginPath(); ctx.arc(6, -19, 5.5, Math.PI, 2 * Math.PI); ctx.fill();\\n\\n  ctx.fillStyle = '#7c8894';\\n  ctx.fillRect(-40, -10, 8, 4);\\n\\n  // wheels\\n  for (var j = 0; j < 2; j++) {\\n    var off2 = (j === 0 ? -car.wheelBase / 2 : car.wheelBase / 2);\\n    var travel2 = clamp(groundY(car.x + off2 * ca) - (car.y + off2 * sa + car.wheelR), 0, st.restLen + 8);\\n    var wy = (st.restLen + 8 - travel2) + car.wheelR - 4;\\n    ctx.save();\\n    ctx.translate(off2, wy);\\n    ctx.rotate(car.wheelSpin);\\n    ctx.fillStyle = '#23282e';\\n    ctx.beginPath(); ctx.arc(0, 0, car.wheelR, 0, 6.283); ctx.fill();\\n    ctx.fillStyle = '#5d6a76';\\n    ctx.beginPath(); ctx.arc(0, 0, car.wheelR * 0.55, 0, 6.283); ctx.fill();\\n    ctx.strokeStyle = '#39424c'; ctx.lineWidth = 2;\\n    for (var sp = 0; sp < 5; sp++) {\\n      var a = sp * 6.283 / 5;\\n      ctx.beginPath(); ctx.moveTo(0, 0); ctx.lineTo(Math.cos(a) * car.wheelR * 0.5, Math.sin(a) * car.wheelR * 0.5); ctx.stroke();\\n    }\\n    ctx.restore();\\n  }\\n  ctx.restore();\\n}\\n\\nfunction drawDebug() {\\n  var speed = Math.sqrt(car.vx * car.vx + car.vy * car.vy);\\n  var d = 'dist ' + Math.max(0, Math.floor(car.x - 120)) + 'm | speed ' + speed.toFixed(1) +\\n          ' | fuel ' + Math.round(car.fuel) + '% | coins ' + runCoins + ' | state ' + state +\\n          ' | angle ' + (car.angle * 57.295).toFixed(1) + 'deg';\\n  if (d !== lastDebug) { el.debug.textContent = d; lastDebug = d; }\\n}\\n\\nfunction drawHUDValues() {\\n  el.dist.textContent = Math.max(0, Math.floor(car.x - 120)) + ' m';\\n  el.best.textContent = save.best + ' m';\\n  el.coins.textContent = runCoins + ' (bank ' + save.coins + ')';\\n  var pct = clamp(car.fuel / carStats().tank, 0, 1);\\n  el.fuelbar.style.width = (pct * 100).toFixed(1) + '%';\\n  el.fueltext.textContent = 'fuel ' + Math.round(car.fuel) + '%';\\n  el.statename.textContent = state;\\n}\\n\\n/* ---------------- loop ---------------- */\\nvar last = performance.now();\\nvar acc = 0;\\nvar FIXED = 1 / 120;\\n\\nfunction frame(now) {\\n  var dt = Math.min(0.05, (now - last) / 1000);\\n  last = now;\\n  if (state === 'drive') {\\n    acc += dt;\\n    var guard = 0;\\n    while (acc >= FIXED && guard < 12) { physics(FIXED); acc -= FIXED; guard++; }\\n    if (actx && save.sound && engineGain) {\\n      engineOsc.frequency.value = 60 + Math.abs(car.vx) * 9 + (input.gas ? 40 : 0);\\n      engineGain.gain.value = input.gas && car.contact > 0 ? 0.09 : 0.035;\\n    }\\n  }\\n  drawSky();\\n  drawTerrain();\\n  drawCoins();\\n  drawParticles();\\n  drawCar();\\n  drawHUDValues();\\n  drawDebug();\\n  requestAnimationFrame(frame);\\n}\\n\\nresetCar(); spawnCoins();\\ncamX = car.x + 140; camY = car.y - 40;\\nshowOverlay('Ready to drive', 'Gas: Right / D — or press pedals on touch screens. P pause, R restart, M sound, G garage.', 'Start driving');\\nstate = 'ready';\\nrequestAnimationFrame(frame);\\n\\nwindow.hillrider = { car: car, state: function () { return state; }, debug: function () { return el.debug.textContent; } };\\n})();\\n\"}"
+  }
+}

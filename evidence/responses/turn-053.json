@@ -1,0 +1,47 @@
+{
+  "id": "chatcmpl-1c329f8448db477ebc7de874",
+  "object": "chat.completion",
+  "created": 1790806514,
+  "model": "qwen3.8-flash-next-iq2_xs",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": null,
+        "tool_calls": [
+          {
+            "id": "call_1042ffa77f6b49f29786816a",
+            "type": "function",
+            "function": {
+              "name": "replace_text",
+              "arguments": "{\"new\":\"  // hard clamp: wheels can never sink below terrain\\n  for (var j = 0; j < 2; j++) {\\n    var off2 = arms[j];\\n    var wx2 = car.x + off2 * ca;\\n    var wy2 = car.y + off2 * sa;\\n    var gy2 = groundY(wx2);\\n    if (wy2 + car.wheelR > gy2) {\\n      var push = (wy2 + car.wheelR) - gy2;\\n      car.y -= push;\\n      if (car.vy > 0) {\\n        if (car.vy > 220) thud(clamp(car.vy / 700, 0, 1));\\n        car.vy = -car.vy * 0.15;\\n      }\\n    }\\n  }\\n  if (car.y > groundY(car.x) - 8) { car.y = groundY(car.x) - 8; if (car.vy > 0) car.vy = 0; }\\n\\n  // every state stays finite \\u2014 NaN can never propagate into the debug readout\\n  car.x = clamp(car.x, -200, 1000000);\\n  car.y = clamp(car.y, -5000, WORLD_BOTTOM + 200);\\n  car.angle = wrapAngle(car.angle);\",\"old\":\"  // hard clamp: wheels can never sink below terrain\\n  for (var j = 0; j < 2; j++) {\\n    var off2 = (j === 0 ? -car.wheelBase / 2 : car.wheelBase / 2);\\n    var wx2 = car.x + off2 * ca;\\n    var wy2 = car.y + off2 * sa;\\n    var gy2 = groundY(wx2);\\n    if (wy2 + car.wheelR > gy2) {\\n      var push = (wy2 + car.wheelR) - gy2;\\n      car.y -= push;\\n      if (car.vy > 0) {\\n        if (car.vy > 220) thud(clamp(car.vy / 700, 0, 1));\\n        car.vy = -car.vy * 0.15;\\n      }\\n    }\\n  }\\n  if (car.y > groundY(car.x) - 8) { car.y = groundY(car.x) - 8; if (car.vy > 0) car.vy = 0; }\",\"path\":\"game.js\"}"
+            }
+          }
+        ]
+      },
+      "finish_reason": "tool_calls"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 25410,
+    "completion_tokens": 609,
+    "total_tokens": 26019,
+    "prompt_tokens_details": {
+      "cached_tokens": 25385
+    }
+  },
+  "timings": {
+    "cache_n": 25385,
+    "prompt_n": 25,
+    "prompt_ms": 182.9,
+    "prompt_per_token_ms": 7.316,
+    "prompt_per_second": 136.7,
+    "predicted_n": 609,
+    "predicted_ms": 3055.1,
+    "predicted_per_token_ms": 5.017,
+    "predicted_per_second": 199.3,
+    "draft_n": 519,
+    "draft_n_accepted": 498
+  }
+}

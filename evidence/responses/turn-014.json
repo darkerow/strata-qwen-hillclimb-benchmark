@@ -1,0 +1,47 @@
+{
+  "id": "chatcmpl-025e88064fb0488bb37d4108",
+  "object": "chat.completion",
+  "created": 1790805973,
+  "model": "qwen3.8-flash-next-iq2_xs",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": null,
+        "tool_calls": [
+          {
+            "id": "call_206a0f25d5ff4a7c92c5c99b",
+            "type": "function",
+            "function": {
+              "name": "replace_text",
+              "arguments": "{\"path\":\"game.js\",\"old\":\"  var brakeForce = 0;\\n  if (input.brake && car.contact > 0) {\",\"new\":\"  var brakeForce = 0;\\n  if (input.brake && contactSum > 0) {\"}"
+            }
+          }
+        ]
+      },
+      "finish_reason": "tool_calls"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 14742,
+    "completion_tokens": 94,
+    "total_tokens": 14836,
+    "prompt_tokens_details": {
+      "cached_tokens": 14721
+    }
+  },
+  "timings": {
+    "cache_n": 14721,
+    "prompt_n": 21,
+    "prompt_ms": 130.4,
+    "prompt_per_token_ms": 6.21,
+    "prompt_per_second": 161.0,
+    "predicted_n": 94,
+    "predicted_ms": 459.8,
+    "predicted_per_token_ms": 4.891,
+    "predicted_per_second": 204.4,
+    "draft_n": 77,
+    "draft_n_accepted": 75
+  }
+}

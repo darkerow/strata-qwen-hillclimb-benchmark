@@ -1,0 +1,5 @@
+{
+  "browser": "Latest version renders, R restart works, no captured JavaScript errors. UI readable. Russian README exists.",
+  "request": "All requested test feedback returned. Finish now with honest limitations; no further game edits needed for this timed benchmark.",
+  "simulation": "Final120s gas test:512m/2coins/77%fuel at30s;896m/3coins/56%fuel at60s;1449m gameover at120s;7coins banked;fuel pickups work;R restarts. Values finite. Angle now variable but often near44deg and movement is still springy. Core prototype playable with rough physics."
+}

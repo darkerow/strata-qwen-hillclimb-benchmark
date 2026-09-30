@@ -1,0 +1,47 @@
+{
+  "id": "chatcmpl-5437fa97dc764a5d81cab17f",
+  "object": "chat.completion",
+  "created": 1790805969,
+  "model": "qwen3.8-flash-next-iq2_xs",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": null,
+        "tool_calls": [
+          {
+            "id": "call_ec5dcb10dc984de99e84fa77",
+            "type": "function",
+            "function": {
+              "name": "replace_text",
+              "arguments": "{\"path\":\"game.js\",\"old\":\"function togglePause() {\\n  if (state === 'drive') { state = 'paused'; showOverlay('Paused', 'press P to continue, R to restart', 'Continue'); }\\n  else if (state === 'paused') { state = 'drive'; hideOverlay(); }\\n}\",\"new\":\"function togglePause() {\\n  if (state === 'drive') {\\n    state = 'paused';\\n    save.coins += runCoins; runCoins = 0; persist();\\n    showOverlay('Paused', 'press P to continue, R to restart', 'Continue');\\n  } else if (state === 'paused') { state = 'drive'; hideOverlay(); }\\n}\"}"
+            }
+          }
+        ]
+      },
+      "finish_reason": "tool_calls"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 14070,
+    "completion_tokens": 191,
+    "total_tokens": 14261,
+    "prompt_tokens_details": {
+      "cached_tokens": 14049
+    }
+  },
+  "timings": {
+    "cache_n": 14049,
+    "prompt_n": 21,
+    "prompt_ms": 129.1,
+    "prompt_per_token_ms": 6.148,
+    "prompt_per_second": 162.7,
+    "predicted_n": 191,
+    "predicted_ms": 1040.3,
+    "predicted_per_token_ms": 5.447,
+    "predicted_per_second": 183.6,
+    "draft_n": 163,
+    "draft_n_accepted": 143
+  }
+}

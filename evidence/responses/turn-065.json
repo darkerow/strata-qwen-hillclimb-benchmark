@@ -1,0 +1,47 @@
+{
+  "id": "chatcmpl-ddda5f95967c46498a1d266d",
+  "object": "chat.completion",
+  "created": 1790806586,
+  "model": "qwen3.8-flash-next-iq2_xs",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": null,
+        "tool_calls": [
+          {
+            "id": "call_aa28a70a9f23426dafbb8eba",
+            "type": "function",
+            "function": {
+              "name": "replace_text",
+              "arguments": "{\"new\":\"  if (contactSum > 0) {\\n    // torque that makes the chassis follow the terrain slope\\n    var target = wrapAngle(Math.atan(groundSlope(car.x)));\\n    var err = wrapAngle(target - car.angle);\\n    car.omega += (totalTorque / car.inertia) * dt + err * 1.2 * dt;\\n    car.omega -= car.omega * 3.6 * dt;\\n    car.omega = clamp(car.omega, -4, 4);\\n  } else {\\n    car.omega += (totalTorque / car.inertia) * dt;\\n    car.omega = clamp(car.omega, -4, 4);\\n  }\",\"old\":\"  if (contactSum > 0) {\\n    // torque that makes the chassis follow the terrain slope\\n    var target = wrapAngle(Math.atan(groundSlope(car.x)));\\n    var err = wrapAngle(target - car.angle);\\n    car.omega += (totalTorque / car.inertia) * dt + err * 1.5 * dt;\\n    car.omega -= car.omega * 2.6 * dt;\\n    car.omega = clamp(car.omega, -6, 6);\\n  } else {\\n    car.omega += (totalTorque / car.inertia) * dt;\\n    car.omega = clamp(car.omega, -6, 6);\\n  }\",\"path\":\"game.js\"}"
+            }
+          }
+        ]
+      },
+      "finish_reason": "tool_calls"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 30450,
+    "completion_tokens": 356,
+    "total_tokens": 30806,
+    "prompt_tokens_details": {
+      "cached_tokens": 30235
+    }
+  },
+  "timings": {
+    "cache_n": 30235,
+    "prompt_n": 215,
+    "prompt_ms": 660.2,
+    "prompt_per_token_ms": 3.071,
+    "prompt_per_second": 325.7,
+    "predicted_n": 356,
+    "predicted_ms": 1798.0,
+    "predicted_per_token_ms": 5.051,
+    "predicted_per_second": 198.0,
+    "draft_n": 322,
+    "draft_n_accepted": 286
+  }
+}

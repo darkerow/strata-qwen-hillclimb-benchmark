@@ -1,0 +1,47 @@
+{
+  "id": "chatcmpl-4e95902a10644ad9b2d62b22",
+  "object": "chat.completion",
+  "created": 1790806330,
+  "model": "qwen3.8-flash-next-iq2_xs",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": null,
+        "tool_calls": [
+          {
+            "id": "call_af967b4edfc94215852a305d",
+            "type": "function",
+            "function": {
+              "name": "replace_text",
+              "arguments": "{\"path\":\"index.html\",\"old\":\"    <div id=\\\"topbtns\\\">\\n      <button id=\\\"soundbtn\\\" type=\\\"button\\\" title=\\\"Sound on/off\\\">SOUND: ON</button>\\n      <button id=\\\"garagebtn\\\" type=\\\"button\\\" title=\\\"Garage upgrades\\\">GARAGE</button>\\n    </div>\\n\\n  <div id=\\\"debug\\\"></div>\",\"new\":\"  <div id=\\\"debug\\\"></div>\"}"
+            }
+          }
+        ]
+      },
+      "finish_reason": "tool_calls"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 52027,
+    "completion_tokens": 132,
+    "total_tokens": 52159,
+    "prompt_tokens_details": {
+      "cached_tokens": 52006
+    }
+  },
+  "timings": {
+    "cache_n": 52006,
+    "prompt_n": 21,
+    "prompt_ms": 141.4,
+    "prompt_per_token_ms": 6.733,
+    "prompt_per_second": 148.5,
+    "predicted_n": 132,
+    "predicted_ms": 750.4,
+    "predicted_per_token_ms": 5.685,
+    "predicted_per_second": 175.9,
+    "draft_n": 121,
+    "draft_n_accepted": 101
+  }
+}

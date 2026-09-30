@@ -1,0 +1,47 @@
+{
+  "id": "chatcmpl-9a7d7f7d36414964a8e0affd",
+  "object": "chat.completion",
+  "created": 1790806517,
+  "model": "qwen3.8-flash-next-iq2_xs",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Now add fuel pickups (canisters) and include fuel in the debug line.",
+        "tool_calls": [
+          {
+            "id": "call_6246b4bd17d247bab3bebb55",
+            "type": "function",
+            "function": {
+              "name": "replace_text",
+              "arguments": "{\"new\":\"var coins = [];\\nvar fuels = [];\\nvar particles = [];\\nvar lastDebug = '';\\n\\nfunction spawnCoins() {\\n  coins = [];\\n  for (var x = 180; x < 4200; x += 90) {\\n    if (hash(x / 90 + 3.3) > 0.55) {\\n      var lift = 26 + 34 * hash(x / 90 + 9.1);\\n      coins.push({ x: x, y: groundY(x) - lift, taken: false, spin: hash(x) * 6.28 });\\n    }\\n  }\\n  fuels = [];\\n  for (var x2 = 260; x2 < 4200; x2 += 210) {\\n    if (hash(x2 / 210 + 4.6) > 0.42) {\\n      fuels.push({ x: x2, y: groundY(x2) - 30, taken: false });\\n    }\\n  }\\n}\",\"old\":\"var coins = [];\\nvar particles = [];\\nvar lastDebug = '';\\n\\nfunction spawnCoins() {\\n  coins = [];\\n  for (var x = 180; x < 4200; x += 90) {\\n    if (hash(x / 90 + 3.3) > 0.55) {\\n      var lift = 26 + 34 * hash(x / 90 + 9.1);\\n      coins.push({ x: x, y: groundY(x) - lift, taken: false, spin: hash(x) * 6.28 });\\n    }\\n  }\\n}\",\"path\":\"game.js\"}"
+            }
+          }
+        ]
+      },
+      "finish_reason": "tool_calls"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 26042,
+    "completion_tokens": 452,
+    "total_tokens": 26494,
+    "prompt_tokens_details": {
+      "cached_tokens": 26021
+    }
+  },
+  "timings": {
+    "cache_n": 26021,
+    "prompt_n": 21,
+    "prompt_ms": 161.9,
+    "prompt_per_token_ms": 7.71,
+    "prompt_per_second": 129.7,
+    "predicted_n": 452,
+    "predicted_ms": 2752.5,
+    "predicted_per_token_ms": 6.09,
+    "predicted_per_second": 164.2,
+    "draft_n": 399,
+    "draft_n_accepted": 344
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "id": "chatcmpl-bc0b38a2bb73458bb2968245",
+  "object": "chat.completion",
+  "created": 1790806531,
+  "model": "qwen3.8-flash-next-iq2_xs",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": null,
+        "tool_calls": [
+          {
+            "id": "call_46cd238eba50450282f4f664",
+            "type": "function",
+            "function": {
+              "name": "replace_text",
+              "arguments": "{\"new\":\"  drawSky();\\n  drawTerrain();\\n  drawCoins();\\n  drawFuel();\\n  drawParticles();\",\"old\":\"  drawSky();\\n  drawTerrain();\\n  drawCoins();\\n  drawParticles();\",\"path\":\"game.js\"}"
+            }
+          }
+        ]
+      },
+      "finish_reason": "tool_calls"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 28192,
+    "completion_tokens": 91,
+    "total_tokens": 28283,
+    "prompt_tokens_details": {
+      "cached_tokens": 28171
+    }
+  },
+  "timings": {
+    "cache_n": 28171,
+    "prompt_n": 21,
+    "prompt_ms": 144.0,
+    "prompt_per_token_ms": 6.857,
+    "prompt_per_second": 145.8,
+    "predicted_n": 91,
+    "predicted_ms": 602.2,
+    "predicted_per_token_ms": 6.618,
+    "predicted_per_second": 151.1,
+    "draft_n": 94,
+    "draft_n_accepted": 69
+  }
+}

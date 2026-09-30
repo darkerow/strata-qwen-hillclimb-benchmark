@@ -1,0 +1,134 @@
+{
+  "harness": "Node VM, fake DOM; not a rendering test",
+  "samples": [
+    {
+      "time": 0,
+      "debug": "dist 0m | speed 0.0 | fuel 100% | coins 0 | state ready | angle 0.0deg",
+      "debugHTML": "",
+      "ui": {
+        "dist": "0 m",
+        "best": "0 m",
+        "coins": "0 (bank 0)",
+        "fueltext": "fuel 100%",
+        "statename": "ready",
+        "soundbtn": "SOUND: ON",
+        "title": "Ready to drive",
+        "msg": "Gas: Right / D — or press pedals on touch screens. P pause, R restart, M sound, G garage.",
+        "mainbtn": "Start driving"
+      }
+    },
+    {
+      "time": 5,
+      "debug": "dist 58m | speed 18.5 | fuel 93% | coins 0 | state drive | angle 0.0deg",
+      "debugHTML": "",
+      "ui": {
+        "dist": "58 m",
+        "best": "58 m",
+        "coins": "0 (bank 0)",
+        "fueltext": "fuel 93%",
+        "statename": "drive",
+        "soundbtn": "SOUND: ON",
+        "title": "Ready to drive",
+        "msg": "Gas: Right / D — or press pedals on touch screens. P pause, R restart, M sound, G garage.",
+        "mainbtn": "Start driving"
+      }
+    },
+    {
+      "time": 10,
+      "debug": "dist 160m | speed 23.5 | fuel 85% | coins 0 | state drive | angle 0.0deg",
+      "debugHTML": "",
+      "ui": {
+        "dist": "160 m",
+        "best": "160 m",
+        "coins": "0 (bank 0)",
+        "fueltext": "fuel 85%",
+        "statename": "drive",
+        "soundbtn": "SOUND: ON",
+        "title": "Ready to drive",
+        "msg": "Gas: Right / D — or press pedals on touch screens. P pause, R restart, M sound, G garage.",
+        "mainbtn": "Start driving"
+      }
+    },
+    {
+      "time": 15,
+      "debug": "dist 229m | speed 8.0 | fuel 78% | coins 0 | state drive | angle 0.0deg",
+      "debugHTML": "",
+      "ui": {
+        "dist": "229 m",
+        "best": "229 m",
+        "coins": "0 (bank 0)",
+        "fueltext": "fuel 78%",
+        "statename": "drive",
+        "soundbtn": "SOUND: ON",
+        "title": "Ready to drive",
+        "msg": "Gas: Right / D — or press pedals on touch screens. P pause, R restart, M sound, G garage.",
+        "mainbtn": "Start driving"
+      }
+    },
+    {
+      "time": 20,
+      "debug": "dist 312m | speed 21.9 | fuel 71% | coins 1 | state drive | angle 0.0deg",
+      "debugHTML": "",
+      "ui": {
+        "dist": "312 m",
+        "best": "312 m",
+        "coins": "1 (bank 0)",
+        "fueltext": "fuel 71%",
+        "statename": "drive",
+        "soundbtn": "SOUND: ON",
+        "title": "Ready to drive",
+        "msg": "Gas: Right / D — or press pedals on touch screens. P pause, R restart, M sound, G garage.",
+        "mainbtn": "Start driving"
+      }
+    },
+    {
+      "time": 25,
+      "debug": "dist 424m | speed 18.3 | fuel 63% | coins 1 | state drive | angle 0.0deg",
+      "debugHTML": "",
+      "ui": {
+        "dist": "424 m",
+        "best": "424 m",
+        "coins": "1 (bank 0)",
+        "fueltext": "fuel 63%",
+        "statename": "drive",
+        "soundbtn": "SOUND: ON",
+        "title": "Ready to drive",
+        "msg": "Gas: Right / D — or press pedals on touch screens. P pause, R restart, M sound, G garage.",
+        "mainbtn": "Start driving"
+      }
+    },
+    {
+      "time": 30,
+      "debug": "dist 506m | speed 55.2 | fuel 55% | coins 2 | state drive | angle 0.0deg",
+      "debugHTML": "",
+      "ui": {
+        "dist": "506 m",
+        "best": "506 m",
+        "coins": "2 (bank 0)",
+        "fueltext": "fuel 55%",
+        "statename": "drive",
+        "soundbtn": "SOUND: ON",
+        "title": "Ready to drive",
+        "msg": "Gas: Right / D — or press pedals on touch screens. P pause, R restart, M sound, G garage.",
+        "mainbtn": "Start driving"
+      }
+    },
+    {
+      "time": 30,
+      "debug": "dist 0m | speed 58.2 | fuel 100% | coins 0 | state drive | angle 0.0deg",
+      "debugHTML": "",
+      "ui": {
+        "dist": "0 m",
+        "best": "506 m",
+        "coins": "0 (bank 0)",
+        "fueltext": "fuel 100%",
+        "statename": "drive",
+        "soundbtn": "SOUND: ON",
+        "title": "Ready to drive",
+        "msg": "Gas: Right / D — or press pedals on touch screens. P pause, R restart, M sound, G garage.",
+        "mainbtn": "Start driving"
+      },
+      "afterRestart": true
+    }
+  ]
+}

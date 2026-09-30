@@ -1,0 +1,47 @@
+{
+  "id": "chatcmpl-be44cf813da2453cb0a3d69c",
+  "object": "chat.completion",
+  "created": 1790806522,
+  "model": "qwen3.8-flash-next-iq2_xs",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": null,
+        "tool_calls": [
+          {
+            "id": "call_d601985438a94cb292e7f846",
+            "type": "function",
+            "function": {
+              "name": "replace_text",
+              "arguments": "{\"new\":\"  // coins\\n  for (var c = 0; c < coins.length; c++) {\\n    var co = coins[c];\\n    if (co.taken) continue;\\n    var dx = co.x - car.x, dy = co.y - car.y;\\n    if (dx * dx + dy * dy < 46 * 46) {\\n      co.taken = true; runCoins++;\\n      blip(880, 0.12, 0.16); blip(1320, 0.16, 0.12);\\n      for (var p = 0; p < 8; p++) {\\n        particles.push({ x: co.x, y: co.y, vx: (hash(p + co.spin) - 0.5) * 160, vy: -hash(p * 3 + co.spin) * 180, life: 0.6, c: '#ffd27a' });\\n      }\\n    }\\n  }\\n\\n  // fuel canisters\\n  for (var fc = 0; fc < fuels.length; fc++) {\\n    var fu = fuels[fc];\\n    if (fu.taken) continue;\\n    var ddx = fu.x - car.x, ddy = fu.y - car.y;\\n    if (ddx * ddx + ddy * ddy < 52 * 52) {\\n      fu.taken = true;\\n      car.fuel = Math.min(carStats().tank, car.fuel + carStats().tank * 0.22);\\n      blip(520, 0.16, 0.16); blip(760, 0.2, 0.12);\\n      for (var fp = 0; fp < 8; fp++) {\\n        particles.push({ x: fu.x, y: fu.y, vx: (hash(fp + 2.2) - 0.5) * 150, vy: -hash(fp * 5 + 1.1) * 170, life: 0.6, c: '#8fd6a0' });\\n      }\\n    }\\n  }\",\"old\":\"  // coins\\n  for (var c = 0; c < coins.length; c++) {\\n    var co = coins[c];\\n    if (co.taken) continue;\\n    var dx = co.x - car.x, dy = co.y - car.y;\\n    if (dx * dx + dy * dy < 46 * 46) {\\n      co.taken = true; runCoins++;\\n      blip(880, 0.12, 0.16); blip(1320, 0.16, 0.12);\\n      for (var p = 0; p < 8; p++) {\\n        particles.push({ x: co.x, y: co.y, vx: (hash(p + co.spin) - 0.5) * 160, vy: -hash(p * 3 + co.spin) * 180, life: 0.6, c: '#ffd27a' });\\n      }\\n    }\\n  }\",\"path\":\"game.js\"}"
+            }
+          }
+        ]
+      },
+      "finish_reason": "tool_calls"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 26700,
+    "completion_tokens": 770,
+    "total_tokens": 27470,
+    "prompt_tokens_details": {
+      "cached_tokens": 26679
+    }
+  },
+  "timings": {
+    "cache_n": 26679,
+    "prompt_n": 21,
+    "prompt_ms": 143.0,
+    "prompt_per_token_ms": 6.81,
+    "prompt_per_second": 146.9,
+    "predicted_n": 770,
+    "predicted_ms": 4518.9,
+    "predicted_per_token_ms": 5.869,
+    "predicted_per_second": 170.4,
+    "draft_n": 672,
+    "draft_n_accepted": 589
+  }
+}

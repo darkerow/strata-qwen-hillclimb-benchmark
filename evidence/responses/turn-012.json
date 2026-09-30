@@ -1,0 +1,47 @@
+{
+  "id": "chatcmpl-737b3a29370d4674b7637135",
+  "object": "chat.completion",
+  "created": 1790805971,
+  "model": "qwen3.8-flash-next-iq2_xs",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": null,
+        "tool_calls": [
+          {
+            "id": "call_d1ed15a7e04a49979beeeabf",
+            "type": "function",
+            "function": {
+              "name": "replace_text",
+              "arguments": "{\"path\":\"game.js\",\"old\":\"function restart() {\\n  resetCar(); spawnCoins(); runCoins = 0; particles = [];\\n  state = 'drive'; hideOverlay();\\n}\",\"new\":\"function restart() {\\n  resetCar(); spawnCoins(); runCoins = 0; particles = [];\\n  camX = car.x + 140; camY = car.y - 40;\\n  state = 'drive'; hideOverlay();\\n}\"}"
+            }
+          }
+        ]
+      },
+      "finish_reason": "tool_calls"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 14420,
+    "completion_tokens": 137,
+    "total_tokens": 14557,
+    "prompt_tokens_details": {
+      "cached_tokens": 14399
+    }
+  },
+  "timings": {
+    "cache_n": 14399,
+    "prompt_n": 21,
+    "prompt_ms": 131.2,
+    "prompt_per_token_ms": 6.248,
+    "prompt_per_second": 160.1,
+    "predicted_n": 137,
+    "predicted_ms": 748.0,
+    "predicted_per_token_ms": 5.46,
+    "predicted_per_second": 183.2,
+    "draft_n": 119,
+    "draft_n_accepted": 107
+  }
+}

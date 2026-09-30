@@ -1,0 +1,47 @@
+{
+  "id": "chatcmpl-c2df272062cc451c8ad2a38f",
+  "object": "chat.completion",
+  "created": 1790806510,
+  "model": "qwen3.8-flash-next-iq2_xs",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": null,
+        "tool_calls": [
+          {
+            "id": "call_7049b79eb8554be1bb7039a2",
+            "type": "function",
+            "function": {
+              "name": "replace_text",
+              "arguments": "{\"new\":\"  // integrate translation AND rotation\\n  car.x += car.vx * dt;\\n  car.y += car.vy * dt;\\n  car.angle = wrapAngle(car.angle + car.omega * dt);\",\"old\":\"  // integrate\\n  car.x += car.vx * dt;\\n  car.y += car.vy * dt;\",\"path\":\"game.js\"}"
+            }
+          }
+        ]
+      },
+      "finish_reason": "tool_calls"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 24651,
+    "completion_tokens": 115,
+    "total_tokens": 24766,
+    "prompt_tokens_details": {
+      "cached_tokens": 24628
+    }
+  },
+  "timings": {
+    "cache_n": 24628,
+    "prompt_n": 23,
+    "prompt_ms": 144.5,
+    "prompt_per_token_ms": 6.283,
+    "prompt_per_second": 159.2,
+    "predicted_n": 115,
+    "predicted_ms": 664.8,
+    "predicted_per_token_ms": 5.781,
+    "predicted_per_second": 173.0,
+    "draft_n": 109,
+    "draft_n_accepted": 85
+  }
+}

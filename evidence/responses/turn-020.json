@@ -1,0 +1,47 @@
+{
+  "id": "chatcmpl-ace513d7ccff4aeda189098d",
+  "object": "chat.completion",
+  "created": 1790805982,
+  "model": "qwen3.8-flash-next-iq2_xs",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": null,
+        "tool_calls": [
+          {
+            "id": "call_d63bc1bcf02347a5a9ad9521",
+            "type": "function",
+            "function": {
+              "name": "replace_text",
+              "arguments": "{\"path\":\"game.js\",\"old\":\"  var totalUp = 0, totalTorque = 0;\\n  var contactSum = car.contact; // set by suspension loop below before use\",\"new\":\"  var totalUp = 0, totalTorque = 0;\\n  var contactSum = 0;\\n\\n  /* --- suspension / ground contact (must run before force application) --- */\\n  var sa = Math.sin(car.angle), ca = Math.cos(car.angle);\\n  var upx = -sa, upy = -ca; // body-up direction in screen coords (up = -y)\\n\\n  for (var i = 0; i < 2; i++) {\\n    var off = (i === 0 ? -car.wheelBase / 2 : car.wheelBase / 2);\\n    var wx = car.x + off * ca;\\n    var wy = car.y + off * sa;\\n    var gy = groundY(wx);\\n    var travel = clamp(gy - (wy + car.wheelR), 0, restLen + 8); // spring compression\\n    var f = 0;\\n    if (travel > 0) {\\n      var wheelVelY = car.vy + car.omega * off * ca;\\n      f = k * travel - damp * wheelVelY;\\n      if (f < 0) f = 0;\\n      contactSum += 1;\\n    }\\n    totalUp += f;\\n    totalTorque += f * off;\\n  }\\n  car.contact = contactSum;\\n\\n  // gravity\\n  car.vy += G * dt;\\n  // spring force (up is negative y)\\n  car.vy -= (totalUp / car.mass) * dt;\\n  car.omega += (totalTorque / car.inertia) * dt;\\n\\n  // throttle / brake along ground tangent\\n  var driveForce = 0;\\n  if (input.gas && contactSum > 0 && car.fuel > 0) driveForce = st.torque;\\n  var brakeForce = 0;\\n  if (input.brake && contactSum > 0) {\\n    brakeForce = -Math.sign(car.vx) * 700;\\n    if (Math.abs(car.vx) < 6) brakeForce = 0;\\n  }\\n\\n  // fuel consumption\\n  if (input.gas && contactSum > 0 && car.fuel > 0) {\\n    car.fuel -= dt * (0.9 + 0.25 * Math.abs(car.vx) / st.maxSpeed) * 1.4;\\n  } else {\\n    car.fuel -= dt * 0.18;\\n  }\\n  if (car.fuel <= 0) { car.fuel = 0; endRun('Out of fuel'); }\\n\\n  if (contactSum > 0) {\\n    var n = groundNormal(car.x);\\n    var tx = -n.y, ty = n.x; // tangent pointing +x\\n    var ff = driveForce + brakeForce;\\n    car.vx += (ff * tx / car.mass) * dt;\\n    car.vy += (ff * ty / car.mass) * dt;\\n    // push car back toward the slope so wheels keep contact on steep hills\\n    var normalVel = car.vx * n.x + car.vy * n.y;\\n    if (normalVel > 0) {\\n      var corr = Math.min(normalVel, 220) * 3.5 * dt;\\n      car.vx -= n.x * corr; car.vy -= n.y * corr;\\n    }\\n    // rolling resistance\\n    car.vx -= car.vx * 0.25 * dt;\\n    car.omega -= car.omega * 0.9 * dt;\\n  } else {\\n    car.omega -= car.omega * 0.15 * dt;\\n    car.airTime += dt;\\n  }\\n\\n  // air rotation control (fun, small)\\n  if (contactSum === 0) {\\n    if (input.gas) car.omega += 1.6 * dt;\\n    if (input.brake) car.omega -= 1.6 * dt;\\n  }\\n\\n  // integrate\\n  car.x += car.vx * dt;\\n  car.y += car.vy * dt;\\n\\n  // hard terrain clamp \\u2014 the car can never fall through\\n  for (var j = 0; j < 2; j++) {\\n    var off2 = (j === 0 ? -car.wheelBase / 2 : car.wheelBase / 2);\\n    var wx2 = car.x + off2 * ca;\\n    var wy2 = car.y + off2 * sa;\\n    var gy2 = groundY(wx2);\\n    if (wy2 + car.wheelR > gy2) {\\n      var push = (wy2 + car.wheelR) - gy2;\\n      car.y -= push;\\n      if (car.vy > 0) {\\n        if (car.vy > 220) thud(clamp(car.vy / 700, 0, 1));\\n        car.vy = -car.vy * 0.15;\\n      }\\n    }\\n  }\\n  // roof clamp\\n  if (car.y > groundY(car.x) - 6) { car.y = groundY(car.x) - 6; if (car.vy > 0) car.vy = 0; }\\n\\n  // landing thud\\n  if (contactSum > 0 && car.prevContact === 0 && car.airTime > 0.3) {\\n    thud(clamp(Math.abs(car.vy) / 600, 0.15, 1));\\n    car.airTime = 0;\\n  }\\n  car.prevContact = contactSum;\\n\\n  // speed caps\\n  car.vx = clamp(car.vx, -12, st.maxSpeed);\\n  car.vy = clamp(car.vy, -800, 800);\\n  car.omega = clamp(car.omega, -6, 6);\\n\\n  // wheel spin visual\\n  car.wheelSpin += (car.vx / car.wheelR) * dt;\\n\\n  // overturned check\\n  var cosA = Math.cos(car.angle);\\n  if (car.contact > 0 && cosA < -0.2) car.overturned += dt; else car.overturned = Math.max(0, car.overturned - dt * 0.5);\\n  if (car.overturned > 2.2) endRun('Car is upside down');\\n\\n  // fell off world\\n  if (car.y > WORLD_BOTTOM) endRun('Fell off the world');\"}"
+            }
+          }
+        ]
+      },
+      "finish_reason": "tool_calls"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 25366,
+    "completion_tokens": 1526,
+    "total_tokens": 26892,
+    "prompt_tokens_details": {
+      "cached_tokens": 25342
+    }
+  },
+  "timings": {
+    "cache_n": 25342,
+    "prompt_n": 24,
+    "prompt_ms": 135.8,
+    "prompt_per_token_ms": 5.658,
+    "prompt_per_second": 176.7,
+    "predicted_n": 1526,
+    "predicted_ms": 8349.1,
+    "predicted_per_token_ms": 5.471,
+    "predicted_per_second": 182.8,
+    "draft_n": 1313,
+    "draft_n_accepted": 1149
+  }
+}

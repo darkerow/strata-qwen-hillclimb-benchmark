@@ -1,0 +1,47 @@
+{
+  "id": "chatcmpl-4f3e8d45e553448cbb539a0b",
+  "object": "chat.completion",
+  "created": 1790805964,
+  "model": "qwen3.8-flash-next-iq2_xs",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": null,
+        "tool_calls": [
+          {
+            "id": "call_2e194d5ed33343fba9b86da3",
+            "type": "function",
+            "function": {
+              "name": "replace_text",
+              "arguments": "{\"path\":\"game.js\",\"old\":\"    wheelSpin: 0,\\n    airTime: 0, lastLand: 0,\\n    flipWarn: 0\\n  };\",\"new\":\"    wheelSpin: 0,\\n    airTime: 0, lastLand: 0,\\n    flipWarn: 0, prevContact: 0\\n  };\"}"
+            }
+          }
+        ]
+      },
+      "finish_reason": "tool_calls"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 13246,
+    "completion_tokens": 116,
+    "total_tokens": 13362,
+    "prompt_tokens_details": {
+      "cached_tokens": 13214
+    }
+  },
+  "timings": {
+    "cache_n": 13214,
+    "prompt_n": 32,
+    "prompt_ms": 195.2,
+    "prompt_per_token_ms": 6.1,
+    "prompt_per_second": 163.9,
+    "predicted_n": 116,
+    "predicted_ms": 634.6,
+    "predicted_per_token_ms": 5.471,
+    "predicted_per_second": 182.8,
+    "draft_n": 99,
+    "draft_n_accepted": 85
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "id": "chatcmpl-60b3864ca90d44809dfdf798",
+  "object": "chat.completion",
+  "created": 1790805971,
+  "model": "qwen3.8-flash-next-iq2_xs",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": null,
+        "tool_calls": [
+          {
+            "id": "call_296d2ff28ccc4de58be31f16",
+            "type": "function",
+            "function": {
+              "name": "replace_text",
+              "arguments": "{\"path\":\"game.js\",\"old\":\"function endRun(reason) {\\n  if (state === 'over') return;\\n  state = 'over';\",\"new\":\"function endRun(reason) {\\n  if (state === 'over') return;\\n  state = 'over';\\n  save.coins += runCoins; runCoins = 0; persist();\"}"
+            }
+          }
+        ]
+      },
+      "finish_reason": "tool_calls"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 14284,
+    "completion_tokens": 113,
+    "total_tokens": 14397,
+    "prompt_tokens_details": {
+      "cached_tokens": 14263
+    }
+  },
+  "timings": {
+    "cache_n": 14263,
+    "prompt_n": 21,
+    "prompt_ms": 130.4,
+    "prompt_per_token_ms": 6.21,
+    "prompt_per_second": 161.0,
+    "predicted_n": 113,
+    "predicted_ms": 598.3,
+    "predicted_per_token_ms": 5.295,
+    "predicted_per_second": 188.9,
+    "draft_n": 98,
+    "draft_n_accepted": 87
+  }
+}

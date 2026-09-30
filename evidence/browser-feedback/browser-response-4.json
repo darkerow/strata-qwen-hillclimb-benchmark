@@ -1,0 +1,5 @@
+{
+  "simulation": "NaN fixed. 30s drive508m with2coins; at70s fuel0 gameover890m,3coins banked in localStorage; R restarts. However angle STILL exactly0.0deg at every sample, body horizontal on hills. This remains a failed core physics requirement. No fuel pickup on this run.",
+  "browser": "Real browser renders correctly, layout now good, Garage opens with Engine/Suspension/Fuel tank upgrades and insufficient-funds disabled buttons.",
+  "request": "Inspect the full physics update and ensure angular state is actually integrated, not merely initialized/rendered. Repair yourself, then test. Need short Russian README before finish."
+}

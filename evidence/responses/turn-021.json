@@ -1,0 +1,47 @@
+{
+  "id": "chatcmpl-1c4d1acedceb46b6b8508dfa",
+  "object": "chat.completion",
+  "created": 1790805991,
+  "model": "qwen3.8-flash-next-iq2_xs",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Now remove the duplicated old code block (the original drive/fuel/suspension section that remains after the inserted block).",
+        "tool_calls": [
+          {
+            "id": "call_6d975cc356b84bc6970af1bd",
+            "type": "function",
+            "function": {
+              "name": "read_file",
+              "arguments": "{\"path\":\"game.js\"}"
+            }
+          }
+        ]
+      },
+      "finish_reason": "tool_calls"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 26915,
+    "completion_tokens": 51,
+    "total_tokens": 26966,
+    "prompt_tokens_details": {
+      "cached_tokens": 26893
+    }
+  },
+  "timings": {
+    "cache_n": 26893,
+    "prompt_n": 22,
+    "prompt_ms": 178.3,
+    "prompt_per_token_ms": 8.105,
+    "prompt_per_second": 123.4,
+    "predicted_n": 51,
+    "predicted_ms": 533.8,
+    "predicted_per_token_ms": 10.467,
+    "predicted_per_second": 95.5,
+    "draft_n": 42,
+    "draft_n_accepted": 33
+  }
+}

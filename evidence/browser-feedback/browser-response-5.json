@@ -1,0 +1,5 @@
+{
+  "request": "Core mechanics now work in tests. Run final syntax check, write short Russian README, state real limitations and finish. Avoid broad rewrites that regress this working build.",
+  "simulation": "120 second hold-gas test now finite:30s511m/2coins/77%fuel,60s895m/3coins/56%fuel,115s1420m/7coins/2%fuel,120s1446m gameover with7coins banked. Fuel rises at20s,45s,85s proving pickups. Angle varies ~-56 to+49deg. Restart resets0m/100%fuel and retains best. However suspension looks springy and some angular samples jump abruptly; physical realism still rough.",
+  "browser": "Real browser: car now tilts, canisters visible, UI readable, Start works."
+}

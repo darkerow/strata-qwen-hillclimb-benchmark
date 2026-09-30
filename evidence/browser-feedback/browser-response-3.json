@@ -1,0 +1,5 @@
+{
+  "request": "Please locate numerical error, fix physics and test. 10+ minutes remain but keep changes focused. Need valid tilt, finite velocity and collectibles. Finish only with truthful limitations.",
+  "simulation": "REGRESSION in latest unmodified game on gas: by5s speed NaN, distance57m, angle0; at30s distance472m speedNaN coins0; at120s distance1966m speedNaN coins0 angle0. Before this patch speed was finite and coins worked. This numerical bug occurs when driving, not at idle.",
+  "browser": "Layout fixed: buttons now top-right, title unobstructed. Start renders landscape/car. No JS console errors at idle."
+}

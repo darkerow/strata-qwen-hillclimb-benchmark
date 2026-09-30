@@ -1,0 +1,47 @@
+{
+  "id": "chatcmpl-d479ee90fc9e486493db5796",
+  "object": "chat.completion",
+  "created": 1790806333,
+  "model": "qwen3.8-flash-next-iq2_xs",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": null,
+        "tool_calls": [
+          {
+            "id": "call_a5144278085642bfad15f17e",
+            "type": "function",
+            "function": {
+              "name": "replace_text",
+              "arguments": "{\"path\":\"game.js\",\"old\":\"    var travel = clamp(gy - (wy + car.wheelR), 0, restLen + 8);\\n    var f = 0;\\n    if (travel > 0) {\\n      var wheelVelY = car.vy + car.omega * off * ca;\\n      f = k * travel - damp * wheelVelY;\\n      if (f < 0) f = 0;\\n      contactSum += 1;\\n    }\\n    totalUp += f;\\n    totalTorque += f * off;\\n  }\",\"new\":\"    var travel = clamp(gy - (wy + car.wheelR), 0, restLen + 8);\\n    var f = 0;\\n    if (travel > 0) {\\n      // spring force acts along the body-up axis; its moment arm about the chassis\\n      // centre is the perpendicular distance from the wheel to the body line.\\n      var px = wx - car.x, py = wy - car.y;\\n      var arm = px * upy - py * upx;           // cross(up, wheelOffset)\\n      var wheelVelUp = car.vy * upy + car.vx * upx + car.omega * arm;\\n      f = k * travel - damp * wheelVelUp;\\n      if (f < 0) f = 0;\\n      contactSum += 1;\\n    }\\n    totalUp += f;\\n    totalTorque += f * arm;\\n  }\"}"
+            }
+          }
+        ]
+      },
+      "finish_reason": "tool_calls"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 53160,
+    "completion_tokens": 371,
+    "total_tokens": 53531,
+    "prompt_tokens_details": {
+      "cached_tokens": 53137
+    }
+  },
+  "timings": {
+    "cache_n": 53137,
+    "prompt_n": 23,
+    "prompt_ms": 139.0,
+    "prompt_per_token_ms": 6.043,
+    "prompt_per_second": 165.5,
+    "predicted_n": 371,
+    "predicted_ms": 2470.5,
+    "predicted_per_token_ms": 6.659,
+    "predicted_per_second": 150.2,
+    "draft_n": 321,
+    "draft_n_accepted": 270
+  }
+}

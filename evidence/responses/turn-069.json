@@ -1,0 +1,47 @@
+{
+  "id": "chatcmpl-150df15a67304509a68f060d",
+  "object": "chat.completion",
+  "created": 1790806592,
+  "model": "qwen3.8-flash-next-iq2_xs",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": null,
+        "tool_calls": [
+          {
+            "id": "call_c63ddaca017447779f015c50",
+            "type": "function",
+            "function": {
+              "name": "replace_text",
+              "arguments": "{\"path\":\"game.js\",\"old\":\"      var wheelVelUp = car.vy * upy + car.vx * upx + car.omega * arm;\\n      f = k * travel - damp * wheelVelUp;\",\"new\":\"      var wheelVelUp = car.vy * upy + car.vx * upx + car.omega * arm;\\n      wheelVelUp = clamp(wheelVelUp, -250, 250);\\n      f = k * travel - damp * wheelVelUp;\"}"
+            }
+          }
+        ]
+      },
+      "finish_reason": "tool_calls"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 41889,
+    "completion_tokens": 148,
+    "total_tokens": 42037,
+    "prompt_tokens_details": {
+      "cached_tokens": 31315
+    }
+  },
+  "timings": {
+    "cache_n": 31315,
+    "prompt_n": 10574,
+    "prompt_ms": 3263.2,
+    "prompt_per_token_ms": 0.309,
+    "prompt_per_second": 3240.4,
+    "predicted_n": 148,
+    "predicted_ms": 874.0,
+    "predicted_per_token_ms": 5.905,
+    "predicted_per_second": 169.3,
+    "draft_n": 153,
+    "draft_n_accepted": 111
+  }
+}
