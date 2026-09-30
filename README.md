@@ -1,12 +1,16 @@
-# Strata + Qwen3.8-Flash-Next: Hill Climb game coding test on RTX 4090
+# Qwen3.8-Flash-Next 125B on RTX 4090 with Strata — 166 tok/s, failed game prototype
 
 **An independent, single-run coding experiment:** can a large local model build a playable hill-climbing game using Strata on one 24 GB GPU?
 
-**Result: a playable small prototype, with rough physics.** The game runs, collects coins, consumes/refills fuel and restarts. The model needed repeated test feedback to fix missing angular integration and a numerical regression. It did not reproduce the feel of Hill Climb Racing.
+**Result: the game-quality goal failed.** The code launches and some mechanics work, but the owner rejected the result: poor vehicle physics and game feel. Earlier wording called this a “playable small prototype”; that overstated the outcome. Running without a blank screen is not the same as delivering an acceptable game.
 
-[Play the game](https://darkerow.github.io/strata-qwen-hillclimb-benchmark/game/) · [Live report / Русский отчёт](https://darkerow.github.io/strata-qwen-hillclimb-benchmark/) · [Game source](game/) · [Download game ZIP](https://darkerow.github.io/strata-qwen-hillclimb-benchmark/strata-hillclimb.zip) · [Exact prompt](prompt.txt) · [Raw metrics](evidence/metrics.json)
+[Inspect the failed prototype](https://darkerow.github.io/strata-qwen-hillclimb-benchmark/game/) · [Live report / Русский отчёт](https://darkerow.github.io/strata-qwen-hillclimb-benchmark/) · [Game source](game/) · [Download game ZIP](https://darkerow.github.io/strata-qwen-hillclimb-benchmark/strata-hillclimb.zip) · [Exact prompt](prompt.txt) · [Raw metrics](evidence/metrics.json)
 
-![Model-generated prototype](game-final.png)
+[![Startup and suspension capture](media/startup-capture.gif)](https://darkerow.github.io/strata-qwen-hillclimb-benchmark/media/startup-capture.mp4)
+
+**16-second startup/suspension capture, not a full drive.** Short gas taps only; the capture is about 3 fps, not a measurement of game FPS. [MP4](media/startup-capture.mp4) · [Capture details](media/README.txt)
+
+**Scope:** one assisted run, IQ2_XS quantization, reasoning off in the main run. This does not establish the quality of the full-precision model or Strata generally.
 
 ## Measured results — 1 October 2026
 
@@ -46,11 +50,11 @@ Final 120-second simulated gas-hold test: **1,429 m, 7 coins banked, fuel pickup
 - First attempt with reasoning `medium`: 16,000 output tokens in 107.66 s, no created files. A subsequent request was interrupted at the client; its complete usage is not in the aggregate. See `evidence/attempt-medium/`.
 - Early game versions omitted angular integration, so the body stayed horizontal. A later patch introduced `NaN` velocity. Both were corrected after test feedback.
 - Two HTTP 400 errors came from the harness/context budget. Output allowance changed from 16,000 to 8,192; later, current files and recent observations were carried into fresh context. These failures should not be attributed solely to the model.
-- The final ride remains springy, with implausible body angles. Subjective prototype scores: graphics 5/10, physics 3/10, basic feature coverage 7/10. These are not standardized intelligence scores.
+- The final ride remains springy, with implausible body angles. The owner rejected the game quality. Earlier numerical scores were withdrawn because there was no justified scoring rubric.
 - The game-over screen displays zero run coins even though the bank receives them. Collectibles are generated only to 4,200 world units.
 - `conversation.json` is the final retained context after compaction, **not the entire session**. Per-turn responses, actions and browser feedback preserve additional history. Interrupted response data and intermediate pre-edit versions of the harness were not all captured.
 
-## Play locally
+## Inspect locally
 
 Requires Python 3 only for serving static files:
 
@@ -99,11 +103,12 @@ Exact output may vary by sampling, dependencies and hardware. The fake DOM is in
 
 Account screenshots, credentials, server IPs, billing identifiers and private account logs are excluded. Game files are byte-for-byte copies of the measured final output.
 
-## Publish the playable page
+## Hosted result
 
-After uploading this folder to a public GitHub repository, open **Settings → Pages → Deploy from a branch → main → /(root)**. This static repository includes `.nojekyll`. The root page is the report; `/game/` is the playable prototype. No backend or GPU is needed to play.
+The report and unchanged prototype are hosted on GitHub Pages (main branch, root). No GPU or backend is needed to inspect the output.
 
-Suggested repository name: `strata-qwen-hillclimb-benchmark`.
-Suggested topics: `strata`, `qwen`, `llm-benchmark`, `rtx-4090`, `game-development`, `coding-agent`, `javascript`, `html5-game`.
+## Assessment correction
+
+The current README, report and summary supersede the initial editorial verdict in `evidence/evaluation.json`. That archived file and the model’s own completion claims are retained as historical evidence, not endorsements of game quality. Game source, prompts, API responses and measured timings are unchanged.
 
 This is an independent experiment, not an official Strata or Qwen benchmark. Hill Climb Racing is referenced as gameplay inspiration; the generated game uses its own drawn assets.
